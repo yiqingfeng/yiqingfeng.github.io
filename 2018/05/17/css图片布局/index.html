@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="前端," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="前言在前端组件化开发中，一般情况下都是采用单向数据流的方式。即 state -&amp;gt; view -&amp;gt; action -&amp;gt; state。这种方式在多视图情况下，常会涉及多组件之间通信（数据共享）。 参考资料 Vuex 手册  相关概念state (单一状态树)即利用一个对象包含全部应用的数据源。 结合vue： 在vue中，可以利用计算属性来返回某个状态。这样每当状态发生变动时，都会重新">
-<meta name="keywords" content="前端">
+<meta name="description" content="前言在前端开发过程中，经常会涉及到图片相关布局。尤其是涉及到图片宽度自适应时，这时候就需要将容器宽高按照一定比例进行设置。 解决思路 利用padding实现容器宽高比   padding:在默认的水平文档流方向下，CSS margin和padding属性的垂直方向的百分比值都是相对于宽度计算的，这个和top, bottom等属性的百分比值不一样。  123456&amp;lt;div class=&quot;dem">
+<meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vuex 状态管理">
-<meta property="og:url" content="https://yiqingfeng.github.io/2018/01/14/vuex/index.html">
+<meta property="og:title" content="css图片布局">
+<meta property="og:url" content="https://yiqingfeng.github.io/2018/05/17/css图片布局/index.html">
 <meta property="og:site_name" content="nimo的记忆">
-<meta property="og:description" content="前言在前端组件化开发中，一般情况下都是采用单向数据流的方式。即 state -&amp;gt; view -&amp;gt; action -&amp;gt; state。这种方式在多视图情况下，常会涉及多组件之间通信（数据共享）。 参考资料 Vuex 手册  相关概念state (单一状态树)即利用一个对象包含全部应用的数据源。 结合vue： 在vue中，可以利用计算属性来返回某个状态。这样每当状态发生变动时，都会重新">
+<meta property="og:description" content="前言在前端开发过程中，经常会涉及到图片相关布局。尤其是涉及到图片宽度自适应时，这时候就需要将容器宽高按照一定比例进行设置。 解决思路 利用padding实现容器宽高比   padding:在默认的水平文档流方向下，CSS margin和padding属性的垂直方向的百分比值都是相对于宽度计算的，这个和top, bottom等属性的百分比值不一样。  123456&amp;lt;div class=&quot;dem">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-22T06:47:37.587Z">
+<meta property="og:updated_time" content="2018-05-17T12:09:56.673Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vuex 状态管理">
-<meta name="twitter:description" content="前言在前端组件化开发中，一般情况下都是采用单向数据流的方式。即 state -&amp;gt; view -&amp;gt; action -&amp;gt; state。这种方式在多视图情况下，常会涉及多组件之间通信（数据共享）。 参考资料 Vuex 手册  相关概念state (单一状态树)即利用一个对象包含全部应用的数据源。 结合vue： 在vue中，可以利用计算属性来返回某个状态。这样每当状态发生变动时，都会重新">
+<meta name="twitter:title" content="css图片布局">
+<meta name="twitter:description" content="前言在前端开发过程中，经常会涉及到图片相关布局。尤其是涉及到图片宽度自适应时，这时候就需要将容器宽高按照一定比例进行设置。 解决思路 利用padding实现容器宽高比   padding:在默认的水平文档流方向下，CSS margin和padding属性的垂直方向的百分比值都是相对于宽度计算的，这个和top, bottom等属性的百分比值不一样。  123456&amp;lt;div class=&quot;dem">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://yiqingfeng.github.io/2018/01/14/vuex/"/>
+  <link rel="canonical" href="https://yiqingfeng.github.io/2018/05/17/css图片布局/"/>
 
 
 
 
 
-  <title>Vuex 状态管理 | nimo的记忆</title>
+  <title>css图片布局 | nimo的记忆</title>
   
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yiqingfeng.github.io/2018/01/14/vuex/">
+    <link itemprop="mainEntityOfPage" href="https://yiqingfeng.github.io/2018/05/17/css图片布局/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nimo 的个人博客">
@@ -260,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Vuex 状态管理</h1>
+          <h1 class="post-title" itemprop="name headline">css图片布局</h1>
         
 
         <div class="post-meta">
@@ -272,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-14T23:27:14+08:00">
-                2018-01-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-17T17:29:29+08:00">
+                2018-05-17
               </time>
             
 
@@ -310,39 +310,18 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在前端组件化开发中，一般情况下都是采用单向数据流的方式。即 state -&gt; view -&gt; action -&gt; state。这种方式在多视图情况下，<br>常会涉及多组件之间通信（数据共享）。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在前端开发过程中，经常会涉及到图片相关布局。尤其是涉及到图片宽度自适应时，这时候就需要将容器宽高按照一定比例进行设置。</p>
+<h2 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h2><ul>
+<li>利用<code>padding</code>实现容器宽高比</li>
+</ul>
+<blockquote>
+<p><strong>padding</strong>:<br>在默认的水平文档流方向下，CSS margin和padding属性的垂直方向的百分比值都是相对于宽度计算的，这个和top, bottom等属性的百分比值不一样。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"demo-bg"</span>&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"demo-img"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"./test.jpg"</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.demo-bg</span> &#123;</div><div class="line">    <span class="attribute">padding</span>: <span class="number">50%</span> <span class="number">50%</span> <span class="number">0</span>;</div><div class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">"./test.jpg"</span>) no-repeat;</div><div class="line">    <span class="attribute">background-size</span>: cover;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.demo-img</span> &#123;</div><div class="line">    <span class="attribute">position</span>: relative;</div><div class="line">    <span class="attribute">padding</span>: <span class="number">50%</span> <span class="number">50%</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.demo-img</span> <span class="selector-tag">img</span> &#123;</div><div class="line">    position: absolute;;</div><div class="line">    <span class="selector-tag">top</span>: 0;</div><div class="line">    <span class="selector-tag">left</span>: 0;</div><div class="line">    <span class="selector-tag">width</span>: 100%;</div><div class="line">    <span class="selector-tag">height</span>: 100%;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
-<li><a href="https://vuex.vuejs.org/zh-cn/mutations.html" target="_blank" rel="external">Vuex 手册</a></li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2017/08/css-percent-padding-image-layout/" target="_blank" rel="external">CSS百分比padding实现比例固定图片自适应布局</a></li>
 </ul>
-<h2 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h2><h3 id="state-单一状态树"><a href="#state-单一状态树" class="headerlink" title="state (单一状态树)"></a>state (单一状态树)</h3><p>即利用一个对象包含全部应用的数据源。</p>
-<h5 id="结合vue："><a href="#结合vue：" class="headerlink" title="结合vue："></a>结合vue：</h5><ul>
-<li>在vue中，可以利用计算属性来返回某个状态。这样每当状态发生变动时，都会重新计算。不过这种方式会导致组件依赖全局状态单例，同时每个需要state的组件都需频繁导入。</li>
-<li>利用 vuex 将 store 从根组件“注入”到每一个子组件中。这样子组件就能通过 <code>this.$store</code>访问。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Vue.use(Vuex);</div><div class="line"></div><div class="line">new Vue(&#123;</div><div class="line">    el: &apos;#app&apos;,</div><div class="line">    store, // 把 store 对象提供给 “store” 选项，这可以把 store 的实例注入所有的子组件</div><div class="line">    components,</div><div class="line">    ...</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>tips:</strong><br>单一组件涉及到多个状态，可以利用<code>mapState</code>辅助函数减少计算属性的重复和冗余。<br>不必要的局部状态最好还是作为组件的一部分。需依据开发进行权衡和确认。</p>
-</blockquote>
-<h3 id="Getter-（vuex的“计算属性”）"><a href="#Getter-（vuex的“计算属性”）" class="headerlink" title="Getter （vuex的“计算属性”）"></a>Getter （vuex的“计算属性”）</h3><p>合理的利用 Vuex 的 Getter 能更加方便地访问满足条件的state，尤其是列表的 state。</p>
-<blockquote>
-<p><strong>tips:</strong><br>可以利用 Getter 返回一个函数实现传参。（柯里化）<br>可以利用 mapGetters 辅助函数来对 Getter 建立一个别名。（感觉用处不是很大）</p>
-</blockquote>
-<h3 id="Mutation-（类似事件）"><a href="#Mutation-（类似事件）" class="headerlink" title="Mutation （类似事件）"></a>Mutation （类似事件）</h3><p>在 Vuex 中更改 state 的唯一方式就是提交 mutation。每个 mutation 都有一个字符串的<strong>事件类型 (type)</strong>和 一个<strong>回调函数 (handler)</strong>。当然不能直接调用一个 mutation handler。要唤醒一个 mutation 可以调用<code>store.commit(type)</code>。 </p>
-<p>mutation 必须是同步函数。（同步事务）</p>
-<blockquote>
-<p><strong>tips:</strong><br>可以向<code>store.commit</code>传入额外的参数实现提交荷载（payload），但是大多数情况下，荷载应该是一个对象，这样既可以包含多个字段，同时也会使得 mutation 更易读。<br>对象风格的提交方式: 提交 mutation 的另一种方式是直接使用包含 type 属性的对象。即<code>store.commit({ type: &#39;increment&#39; })</code>。这样整个对象都作为载荷传给 mutation 函数，因此 handler 保持不变。<br>使用常量替代 mutation 事件类型，能在多人合作时，使得合作者对整个 app 的 mutation 一目了然。<br>在组件中提交 mutation 时，可以使用<code>mapMutations</code>辅助函数将组件中的方法<code>methods</code>映射为<code>store.commit</code>。</p>
-</blockquote>
-<h3 id="Action-支持异步提交"><a href="#Action-支持异步提交" class="headerlink" title="Action (支持异步提交)"></a>Action (支持异步提交)</h3><p>action提交的是 mutation ，并非直接变更状态。</p>
-<p>其中 action 会接受一个与 store 实例具有相同方法和属性的 context 对象。当然 action 和 mutation 一样都不能直接操作，需要通过 <code>store.dispatch</code> 触发。</p>
-<blockquote>
-<p><strong>tips:</strong><br>actions 支持同样的载荷方式和对象方式进行分发。<br>在组件中分发 action 时，可以使用<code>mapActions</code>辅助函数将组件中的方法<code>methods</code>映射为<code>store.dispatch</code>。<br>注意：组合 action 时，可以利用 promise、action内部调用，以及 async / await 的方式。</p>
-</blockquote>
-<h3 id="Module-模块"><a href="#Module-模块" class="headerlink" title="Module (模块)"></a>Module (模块)</h3><p>由于整个应用使用的是同一个状态树，当应用过于复杂时，store 对象就会相当臃肿。 vuex中提供 module 将 store 进行分割，每个 module 都拥有自己的 state、getter、mutation、action，甚至是嵌套子模块。</p>
-<p>对于模块内部的 mutation 和 getter，接收的第一个参数是模块的局部状态对象。对于模块内部的 getter，根节点状态会作为第三个参数暴露出来。同样对于模块内部的 action，局部状态通过<code>context.state</code>暴露出来，根节点状态则为<code>context.rootState</code>。</p>
-<blockquote>
-<p><strong>命名空间：</strong><br>默认情况下，模块内部的 action、mutation 和 getter 是注册在全局命名空间的——这样使得多个模块能够对同一 mutation 或 action 作出响应。<br>如果希望你的模块具有更高的封装度和复用性，你可以通过添加 namespaced: true 的方式使其成为命名空间模块。当模块被注册后，它的所有 getter、action 及 mutation 都会自动根据模块注册的路径调整命名。</p>
-</blockquote>
-<p>模块可以进行动态创建。例如 vuex-router-sync 插件就是通过动态注册模块将 vue-router 和 vuex 结合在一起，实现应用的路由状态管理。</p>
 
       
     </div>
@@ -360,7 +339,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/前端/" rel="tag"># 前端</a>
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
           
         </div>
       
@@ -373,14 +352,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/04/09/php小结/" rel="next" title="php小结">
+                <i class="fa fa-chevron-left"></i> php小结
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/28/理财书籍推荐/" rel="prev" title="理财书籍推荐">
-                理财书籍推荐 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/18/移动端适配/" rel="prev" title="移动端适配">
+                移动端适配 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -514,7 +497,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">2.</span> <span class="nav-text">参考资料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关概念"><span class="nav-number">3.</span> <span class="nav-text">相关概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#state-单一状态树"><span class="nav-number">3.1.</span> <span class="nav-text">state (单一状态树)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#结合vue："><span class="nav-number">3.1.0.1.</span> <span class="nav-text">结合vue：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Getter-（vuex的“计算属性”）"><span class="nav-number">3.2.</span> <span class="nav-text">Getter （vuex的“计算属性”）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mutation-（类似事件）"><span class="nav-number">3.3.</span> <span class="nav-text">Mutation （类似事件）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Action-支持异步提交"><span class="nav-number">3.4.</span> <span class="nav-text">Action (支持异步提交)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Module-模块"><span class="nav-number">3.5.</span> <span class="nav-text">Module (模块)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决思路"><span class="nav-number">2.</span> <span class="nav-text">解决思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">3.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
