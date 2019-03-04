@@ -59,6 +59,7 @@ function Sub(ages) {
 Sub.prototype = new Super();
 Sub.prototype.constructor = Sub;
 ```
+![](/images/es5继承.jpg)
 
 ES6继承的实质，是通过将父类的属性和方法添加到`this`中，即将父类的属性和方法添加到子类实例对象上，即子类的实例其实是基于父类创建的。这也就是为什么在ES6继承中，子类的构造函数必须先调用`super`方法才能调用this。
 
@@ -80,3 +81,4 @@ class Sub extends Super {
     }
 }
 ```
+![](/images/es6继承.jpg)
