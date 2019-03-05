@@ -1,8 +1,8 @@
 // Custom styles.
+// github图标
 .github-corner:hover .octo-arm {
     animation: octocat-wave 560ms ease-in-out
 }
-
 @keyframes octocat-wave {
     0%,
     100% {
@@ -19,7 +19,6 @@
         transform: rotate(10deg)
     }
 }
-
 @media (max-width:500px) {
     .github-corner:hover .octo-arm {
         animation: none
@@ -30,7 +29,8 @@
     }
 }
 
-.post-body a[rel="noopener"] {
+// 文章超链接
+.post-body a {
   color: #0593d3;
   border-bottom: none;
   &:hover {
@@ -46,4 +46,9 @@
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+}
+
+// 头像圆角
+.site-author-image {
+  border-radius: 50%;
 }
