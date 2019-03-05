@@ -1,7 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags: 每日一题
+tags:
+categories: 每日一题
 ---
 
 原问题为：
