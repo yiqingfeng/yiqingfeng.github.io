@@ -37,3 +37,7 @@ hexo server -i 192.168.1.1 #自定义 IP
 hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令
 
 刚刚的三个命令依次是新建一篇博客文章、生成网页、在本地预览的操作
+
+#### hexo拓展
+
+- [hexo的next主题个性化教程:打造炫酷网站](https://www.jianshu.com/p/f054333ac9e6)
