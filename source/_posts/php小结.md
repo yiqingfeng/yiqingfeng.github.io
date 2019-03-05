@@ -2,6 +2,7 @@
 title: php小结
 date: 2018-04-09 23:25:17
 tags: PHP
+categories: 自我小结
 ---
 
 ## 对自己15年所学php内容简单小结

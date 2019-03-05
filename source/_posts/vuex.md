@@ -1,6 +1,7 @@
 ---
 title: Vuex 状态管理
-tags: 前端
+tags: VUE
+categories: 前端开发框架+库
 ---
 
 ## 前言

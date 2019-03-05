@@ -2,6 +2,7 @@
 title: mysql备忘录
 date: 2018-02-12 18:56:04
 tags: mysql
+categories: 文档备忘录
 ---
 
 ### MYSQL常用命令
