@@ -81,3 +81,11 @@ deploy:
   type: git
   repository: https://github.com/yiqingfeng/yiqingfeng.github.io.git
   branch: master
+
+# Search
+## Docs: https://www.npmjs.com/package/hexo-generator-searchdb
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
