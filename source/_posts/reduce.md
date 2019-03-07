@@ -9,8 +9,6 @@ tags:
 ```javascript
 [ [3,2,1].reduce(Math.pow), [].reduce(Math.pow) ] // TypeError
 
-var val = 'smtg';
-console.log('Value is ' + (val === 'smtg') ? 'Something' : 'Nothing'); // Something
 
 var ary = [0,1,2];
 ary[10] = 10;
@@ -103,7 +101,7 @@ if ('http://giftwrapped.com/picture.jpg'.match('.gif')) {
 
 ### 相关参考：
 
-- [](http://javascript-puzzlers.herokuapp.com/)
+- [do you really know JavaScript? 小测验](http://javascript-puzzlers.herokuapp.com/)
 
 ### 自我总结：
 
