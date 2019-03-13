@@ -30,7 +30,7 @@ gulp.task('minify-html', () => {
 });
 // 压缩 public/js 目录 js
 gulp.task('minify-js', () => {
-    return gulp.src(`${rootPath}**/*.js`)
+    return gulp.src([`${rootPath}**/*.js`, `!${rootPath}lib/blog-encrypt.js`])
         .pipe(uglify())
         .pipe(gulp.dest(distPath));
 });
