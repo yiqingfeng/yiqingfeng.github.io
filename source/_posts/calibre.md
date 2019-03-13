@@ -2,7 +2,7 @@
 title: calibre
 date: 2018-05-28 23:01:02
 tags: kindle
-categories: 生活小遍历
+categories: 小工具
 ---
 
 ## kindle工具calibre之格式转换
