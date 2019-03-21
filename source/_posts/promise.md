@@ -8,10 +8,17 @@ categories: 每日一题
 ### 实现一个最小程度的promise
 
 ```javascript
-function CreatePromise() {
+function CreatePromise(cb) {
     this._state = 'pending'; // 状态
     this._dependencies = []; // 依赖关系
     this._value = null; // 处理数据
+    if (typeof cb === 'function') {
+        cb && cb(value => {
+            this.fulfill(value);
+        }, err => {
+            this.reject(err);
+        });
+    }
 }
 
 // 完成
