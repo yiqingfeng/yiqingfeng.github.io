@@ -1,13 +1,3 @@
----
-title: promise
-date: 2019-03-20 17:58:00
-tags: [JS, 原理]
-categories: 每日一题
----
-
-### 实现一个最小程度的promise
-
-```javascript
 function CreatePromise() {
     this._state = 'pending'; // 状态
     this._dependencies = []; // 依赖关系
@@ -137,7 +127,7 @@ function all() {
     return result;
 }
 
-// 有一个成功，便返回成功
+// 
 CreatePromise.prototype.race = function race() {
     var result = new CreatePromise();
 
@@ -159,4 +149,21 @@ CreatePromise.prototype.race = function race() {
 
     return result;
 }
-```
+
+
+function test(a, b) {
+    var p = new CreatePromise();
+    p.depend(function (value) {
+        console.log(value);
+    }, function (err) {
+        console.log(err);
+    });
+
+    if (b === 0) {
+        p.reject(new Error('b不能为0'));
+    } else {
+        p.fulfill(a / b);
+    }
+}
+
+test(10, 0);
