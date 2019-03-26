@@ -58,21 +58,21 @@ const kill = require('./tree-kill');
 const rootPath = __dirname;
 
 getAllModules(rootPath)
-	.then(list => {
-		buildModules(list, 90000)
-			.catch(e => {
-				console.log(e);
-			});
-	})
-	.catch(e => {
-		console.log(e);
-	});
+  .then(list => {
+    buildModules(list, 90000)
+      .catch(e => {
+        console.log(e);
+      });
+  })
+  .catch(e => {
+    console.log(e);
+  });
 
 // 编译模块列表
 async function buildModules(list, delayTime) {
-	for (let i = 0; i < list.length; i++) {
-		await buildModule(list[i], delayTime);
-	}
+  for (let i = 0; i < list.length; i++) {
+    await buildModule(list[i], delayTime);
+  }
 }
 // 编译指定模块
 function buildModule(moduleName, delayTime) {
@@ -94,7 +94,7 @@ function buildModule(moduleName, delayTime) {
         });
 
         setTimeout(() => {
-        	console.log('\x1b[33m[end]\x1b[0m: ', `时间到结束子任务${moduleName}`);
+          console.log('\x1b[33m[end]\x1b[0m: ', `时间到结束子任务${moduleName}`);
             // child.kill(child.pid); // 子进程无限循环时，无法杀死
             kill(child.pid);
         }, delayTime || 120000);
@@ -103,7 +103,7 @@ function buildModule(moduleName, delayTime) {
 
 // 更新模块信息
 function updateModule(moduleName) {
-	return new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
         const commond = `cat update_module.bat ${moduleName}`;
         const child = exec(commond);
 
@@ -127,63 +127,63 @@ function updateModule(moduleName) {
  * @return {Array} 模块列表
  */
 function getAllModules(root) {
-	return new Promise((resolve, reject) => {
-		const dealModules = [];
-		readdir(root)
-			.then(files => {
-				const tasks = [];
-				files.forEach(file => {
-					let task = isDirectory(path.resolve(root, file));
-					tasks.push(task);
-					task.then(flag => {
-							if (flag) {
-								dealModules.push(file);
-							}
-						});
-				});
-				Promise.all(tasks)
-					.then(() => {
-						resolve(dealModules);
-					})
-					.catch(e => {
-						reject(e);
-					});
-			})
-			.catch(e => {
-				reject(e);
-			});
-	});
+  return new Promise((resolve, reject) => {
+    const dealModules = [];
+    readdir(root)
+      .then(files => {
+        const tasks = [];
+        files.forEach(file => {
+          let task = isDirectory(path.resolve(root, file));
+          tasks.push(task);
+          task.then(flag => {
+              if (flag) {
+                dealModules.push(file);
+              }
+            });
+        });
+        Promise.all(tasks)
+          .then(() => {
+            resolve(dealModules);
+          })
+          .catch(e => {
+            reject(e);
+          });
+      })
+      .catch(e => {
+        reject(e);
+      });
+  });
 }
 
 /**
  * 读取一个目录下的所有文件或子目录
  */
 function readdir(root) {
-	return new Promise((resolve, reject) => {
-		fs.readdir(root, (e, files) => {
-			if (e) {
-				return reject(e);
-			}
-			resolve(files);
-		});
-	});
+  return new Promise((resolve, reject) => {
+    fs.readdir(root, (e, files) => {
+      if (e) {
+        return reject(e);
+      }
+      resolve(files);
+    });
+  });
 }
 
 /**
  * 判断某路径是否为文件夹/目录
  */
 function isDirectory(path) {
-	return new Promise((resolve, reject) => {
-		fs.stat(path, (e, stat) => {
-			if (e) {
-				return reject(e);
-			}
-			if (stat.isDirectory()) {
-				resolve(true);
-			} else {
-				resolve(false);
-			}
-		});
-	});
+  return new Promise((resolve, reject) => {
+    fs.stat(path, (e, stat) => {
+      if (e) {
+        return reject(e);
+      }
+      if (stat.isDirectory()) {
+        resolve(true);
+      } else {
+        resolve(false);
+      }
+    });
+  });
 }
 ```
