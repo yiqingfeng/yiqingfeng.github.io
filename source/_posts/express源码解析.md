@@ -5,6 +5,19 @@ tags: [node, JS]
 categories: 原理说明
 ---
 
+> Express 是一个极简框架，非常灵活可靠，不关注程序架构，不会引入那些无用的垃圾代码。与其他框架相比这种简洁不可避免导致了部分功能缺失。
+
+Express 对 Node 的封装非常棒，主要来源于以下几个设计：
+
+- 中间件
+- 路由
+- 子应用
+- API函数易用
+
+
+
+
+
 > express 是一款轻快简洁的 node.js web 框架。其使用范围相当广泛，在web开发中，可以帮助我们快速开发web应用。
 
 通过 express 可以创建一个项目。 `express -e blog`
@@ -41,6 +54,8 @@ http.createServer((req, res) => {
 
 ### 相关阅读
 
+- [Express 实战（一）：概览](https://juejin.im/post/59bce35f5188257e70531ec0#heading-9)
+- [Express 实战（四）：中间件](https://juejin.im/post/59bce48ef265da066c22fa3a)
 - [express源码阅读](https://juejin.im/post/59c0ef425188257e934966ad)
 - [Express中间件原理详解](https://juejin.im/post/5aa345116fb9a028e52d7217)
 - [redux, koa, express 中间件实现对比解析](https://juejin.im/post/5b9a23a45188255c9c751b07)
