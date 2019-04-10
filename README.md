@@ -41,3 +41,7 @@ hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令
 #### hexo拓展
 
 - [hexo的next主题个性化教程:打造炫酷网站](https://www.jianshu.com/p/f054333ac9e6)
+
+在 `source/_posts` 目录下的文件夹里创建文档
+
+`npm run new tit=<tit> [lay=<lay>] [out=<out>]`

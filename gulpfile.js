@@ -34,9 +34,9 @@ gulp.task('minify-js', () => {
         .pipe(uglify())
         .pipe(gulp.dest(distPath));
 });
+
 // 执行 gulp 命令时执行的任务
 // gulp.task('default', [
 //     'minify-html', 'minify-css', 'minify-js'
 // ]);
-
 gulp.task('default', gulp.series('minify-html', 'minify-css', 'minify-js'));

@@ -6,6 +6,7 @@
     "version": "3.8.0"
   },
   "scripts": {
+    "new": "node ./tools/new-md.js",
     "gulp": "gulp",
     "g": "hexo g && gulp",
     "s": "hexo s",
@@ -32,6 +33,7 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-uglify": "^3.0.2",
-    "hexo-blog-encrypt": "^2.0.10"
+    "hexo-blog-encrypt": "^2.0.10",
+    "moment": "^2.24.0"
   }
 }
