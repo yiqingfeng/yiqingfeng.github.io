@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 垂直居中</title>
+    <style>
+        .parent {
+            width: 50px;
+            height: 100px;
+            margin-top: 20px;
+            background-color: #ccc;
+        }
+        .child {
+            background-color: #000;
+            line-height: 50px;
+            color: #fff;
+        }
+        .parent1 {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .parent2 {
+            position: relative;
+        }
+        .child2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .parent3 {
+            display: flex;
+            align-items: center;
+        }
+        .parent4 {
+            display: grid;
+        }
+        .child4 {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS垂直居中实现方式</h1>
+    <h3>table-cell + vertical-aligin :</h3>
+    <div class="parent parent1">
+        <div class="child child1">DEMO</div>
+    </div>
+    <h3>absolute + transform :</h3>
+    <div class="parent parent2">
+        <div class="child child2">DEMO</div>
+    </div>
+    <h3>flex + align-items :</h3>
+    <div class="parent parent3">
+        <div class="child child3">DEMO</div>
+    </div>
+    <h3>grid + align-self :</h3>
+    <div class="parent parent4">
+        <div class="child child4">DEMO</div>
+    </div>
+</body>
+</html>

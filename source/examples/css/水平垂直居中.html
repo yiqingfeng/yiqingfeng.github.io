@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 水平垂直居中</title>
+    <style>
+        .parent {
+            height: 200px;
+            margin-top: 20px;
+            background-color: #ccc;
+        }
+        .child {
+            background-color: #000;
+            line-height: 50px;
+            color: #fff;
+        }
+        .parent-fix1 {
+            display: table;
+            width: 100%;
+        }
+        .parent1 {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .child1 {
+            display: inline-block;
+        }
+        .parent2 {
+            position: relative;
+        }
+        .child2 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .parent3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent4 {
+            display: grid;
+        }
+        .child4 {
+            justify-self: center;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS垂直居中实现方式</h1>
+    <h3>table-cell + vertical-align + inline-block + text-align :</h3>
+    <div class="parent-fix1">
+        <div class="parent parent1">
+            <div class="child child1">DEMO</div>
+        </div>
+    </div>
+    <h3>absolute + transform :</h3>
+    <div class="parent parent2">
+        <div class="child child2">DEMO</div>
+    </div>
+    <h3>flex + justify-content + align-items :</h3>
+    <div class="parent parent3">
+        <div class="child child3">DEMO</div>
+    </div>
+    <h3>grid + justify-self + align-self :</h3>
+    <div class="parent parent4">
+        <div class="child child4">DEMO</div>
+    </div>
+</body>
+</html>

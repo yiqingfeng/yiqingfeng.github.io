@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 水平居中</title>
+    <style>
+        .parent {
+            width: 300px;
+            margin-top: 20px;
+            background-color: #ccc;
+        }
+        .child {
+            background-color: #000;
+            line-height: 50px;
+            color: #fff;
+        }
+        .parent1 {
+            text-align: center;
+        }
+        .child1 {
+            display: inline-block;
+            text-align: center;
+        }
+        .child2 {
+            display: table;
+            margin: 0 auto;
+        }
+        .parent3 {
+            position: relative;
+            height: 50px;
+        }
+        .child3 {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); /* 相对自身 */
+        }
+        .parent4 {
+            display: flex;
+            justify-content: center;
+        }
+        .parent5 {
+            display: flex;
+        }
+        .child5 {
+            margin: 0 auto;
+        }
+        .parent6 {
+            display: grid;
+        }
+        .child6 {
+            justify-self: center;
+        }
+        .parent7 {
+            display: grid;
+        }
+        .child7 {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS水平居中实现方式</h1>
+    <h3>inline-block + text-aligin :</h3>
+    <div class="parent parent1">
+        <div class="child child1">DEMO</div>
+    </div>
+    <h3>table + margin :</h3>
+    <div class="parent parent2">
+        <div class="child child2">DEMO</div>
+    </div>
+    <h3>absolute + transform :</h3>
+    <div class="parent parent3">
+        <div class="child child3">DEMO</div>
+    </div>
+    <h3>flex + justify-content :</h3>
+    <div class="parent parent4">
+        <div class="child child4">DEMO</div>
+    </div>
+    <h3>flex + margin :</h3>
+    <div class="parent parent5">
+        <div class="child child5">DEMO</div>
+    </div>
+    <h3>grid + justify-content :</h3>
+    <div class="parent parent6">
+        <div class="child child6">DEMO</div>
+    </div>
+    <h3>grid + margin :</h3>
+    <div class="parent parent7">
+        <div class="child child7">DEMO</div>
+    </div>
+</body>
+</html>
