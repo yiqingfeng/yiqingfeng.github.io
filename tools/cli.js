@@ -16,7 +16,21 @@ exports.parseParams = function parseParams(keys) {
             params[data[0]] = true;
         }
     });
-    return keys ? _.pick(params, ...keys) : params;
+    // 依据指定的 keys 规则格式化数据
+    function formatParams(data, keys) {
+        const result = {};
+        Object.keys(keys).forEach(key => {
+            if (Array.isArray(keys[key])) {
+                keys[key].forEach(item => {
+                    result[key] = data[item] || result[key];
+                });
+            } else {
+                result[key] = data[keys[key]];
+            }
+        });
+        return result;
+    }
+    return keys ? formatParams(params, keys) : params;
 };
 
 // 输出日志

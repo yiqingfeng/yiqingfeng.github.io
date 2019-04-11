@@ -17,8 +17,12 @@ const {
 const {
     tit,
     lay,
-    out
-} = parseParams(['tit', 'lay', 'out']);
+    out,
+} = parseParams({
+    tit: ['tit', 'title'],
+    lay: ['lay', 'layout'],
+    out: ['out', 'outPath'],
+});
 
 // 依据 hexo 创建文档
 function createMd() {
@@ -52,7 +56,7 @@ async function removeFile() {
     log('资源目录准备完毕！');
     return new Promise((resolve, reject) => {
         const startTime = Date.now();
-        log(`start 'removemd' ...`);
+        log(`start 'remove-md' ...`);
         // 将文件拷贝到指定目录
         fs.copyFile(sourceFile, path.join(distPath, `./${tit}.md`), err => {
             if (err) {
@@ -63,7 +67,7 @@ async function removeFile() {
                 if (err) {
                     return reject(err);
                 }
-                log(`end removemd after`, diffTime(startTime, Date.now()));
+                log(`end remove-md after`, diffTime(startTime, Date.now()));
                 resolve();
             });
         });
