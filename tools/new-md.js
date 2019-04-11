@@ -46,14 +46,15 @@ async function removeFile() {
 
     if (!out) return;
 
-    const distPath = path.join(mdPath, `./${out}/${tit}.md`);
+    const distPath = path.join(mdPath, `./${out}`);
 
     await dirExists(distPath);
+    log('资源目录准备完毕！');
     return new Promise((resolve, reject) => {
         const startTime = Date.now();
         log(`start 'removemd' ...`);
         // 将文件拷贝到指定目录
-        fs.copyFile(sourceFile, distPath, err => {
+        fs.copyFile(sourceFile, path.join(distPath, `./${tit}.md`), err => {
             if (err) {
                 return reject(err);
             }
@@ -78,4 +79,4 @@ async function newMd() {
 newMd()
     .catch(err => {
         console.log(err);
-    })
+    });
