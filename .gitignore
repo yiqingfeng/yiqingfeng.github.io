@@ -6,3 +6,5 @@ node_modules/
 public/
 .deploy*/
 test.js
+
+package-lock.json
