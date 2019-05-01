@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无缝轮播</title>
+    <style>
+        .m-carousel {
+            overflow: hidden;
+        }
+        .m-carousel .list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 9999px;
+            transition: .5s ease-in-out;
+        }
+        .m-carousel .list::after {
+            content: '';
+            display: block;
+            clear: left;
+            height: 0;
+            visibility: hidden;
+        }
+        .m-carousel .list li {
+            float: left;
+            width: 900px;
+            height: 200px;
+            list-style-type: none !important;
+        }
+        .m-carousel .list li:nth-child(even) {
+            background-color: chartreuse;
+        }
+        .m-carousel .list li:nth-child(odd) {
+            background-color: aqua;
+        }
+        .m-carousel .carousel-item {
+            
+        }
+        .demo-text {
+            padding-top: 60px;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m-carousel">
+        <ul class="list">
+            <li class="carousel-item">
+                <div class="demo-text">5</div>
+            </li>
+            <li class="carousel-item">
+                <div class="demo-text">1</div>
+            </li>
+            <li class="carousel-item">
+                <div class="demo-text">2</div>
+            </li>
+            <li class="carousel-item">
+                <div class="demo-text">3</div>
+            </li>
+            <li class="carousel-item">
+                <div class="demo-text">4</div>
+            </li>
+            <li class="carousel-item">
+                <div class="demo-text">5</div>
+            </li>
+            <li class="carousel-item">
+                <div class="demo-text">1</div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var baseWidth = 900;
+        var $list = document.querySelector('.list');
+        console.log($list);
+        function moveCarousel(index) {
+            $list.style = 'transform: translateX(-' + (baseWidth * index) + 'px)';
+        }
+        var index = 0;
+        setInterval(function () {
+            index = index === 6 ? 0 : (index + 1);
+            moveCarousel(index);
+        }, 1000);
+    </script>
+</body>
+
+</html>
