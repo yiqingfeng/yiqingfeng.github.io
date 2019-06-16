@@ -696,7 +696,7 @@ pace: true
 pace_theme: pace-theme-minimal
 
 # Canvas-nest 动态背景 http://shenzekun.cn/hexo%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF.html
-canvas_nest: true
+canvas_nest: false
 
 # three_waves
 three_waves: false
