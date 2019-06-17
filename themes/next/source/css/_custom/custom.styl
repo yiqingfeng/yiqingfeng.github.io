@@ -1,37 +1,55 @@
 // Custom styles.
 
 // 背景图
+/**
 body {
-    background: url(/images/bg-6.jpg) center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background: url(/images/bg-6.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .post {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
+.header {
+	background-color: transparent;
+}
+.brand {
+  color: #fff;
+}
+.logo-line-before,
+.logo-line-after{
+  & {
+    i {
+      background-color: #fff;
+    }
+  }
+}
+.menu .menu-item a {
+  color: #fff;
+}
+*/
 
 // github图标
 .github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out
+  animation: octocat-wave 560ms ease-in-out
 }
 @keyframes octocat-wave {
-    0%,
-    100% {
-        transform: rotate(0)
-    }
+  0%,
+  100% {
+    transform: rotate(0)
+  }
 
-    20%,
-    60% {
-        transform: rotate(-25deg)
-    }
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
 
-    40%,
-    80% {
-        transform: rotate(10deg)
-    }
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
 }
 @media (max-width:500px) {
     .github-corner:hover .octo-arm {
