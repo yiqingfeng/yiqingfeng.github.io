@@ -45,3 +45,5 @@ hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令
 在 `source/_posts` 目录下的文件夹里创建文档
 
 `npm run new tit=<tit> [lay=<lay>] [out=<out>]`
+
+例如创建一个日常笔记 `npm run new lay=fe-daily out=fe-daily tit=今日一题`
