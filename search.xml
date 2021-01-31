@@ -442,28 +442,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue响应式原理</title>
-    <url>/2019/04/10/2018/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<blockquote>
-<p>Vue 的响应式原理中 Object.defineProperty 有什么缺陷？为什么在 Vue 3.0 采用了 Proxy，抛弃了 Object.defineProperty？</p>
-</blockquote>
-<a id="more"></a>
-<h3 id="相关讨论："><a href="#相关讨论：" class="headerlink" title="相关讨论："></a>相关讨论：</h3><ul>
-<li><a href="https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/90" target="_blank" rel="noopener">https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/90</a></li>
-</ul>
-<h3 id="相关阅读："><a href="#相关阅读：" class="headerlink" title="相关阅读："></a>相关阅读：</h3><ul>
-<li><a href></a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>每日一题</category>
-      </categories>
-      <tags>
-        <tag>JS</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>利用bat</title>
     <url>/2019/03/22/2018/bat/</url>
     <content><![CDATA[<blockquote>
@@ -559,22 +537,6 @@
       </tags>
   </entry>
   <entry>
-    <title>call和apply</title>
-    <url>/2019/04/04/2018/call%E5%92%8Capply/</url>
-    <content><![CDATA[<blockquote>
-<p>call 和 apply 的区别是什么，哪个性能更好一些</p>
-</blockquote>
-<a id="more"></a>
-<p>call和apply使开发过程中，常用的方法。</p>
-<h3 id="相关参考："><a href="#相关参考：" class="headerlink" title="相关参考："></a>相关参考：</h3><h3 id="自我总结："><a href="#自我总结：" class="headerlink" title="自我总结："></a>自我总结：</h3>]]></content>
-      <categories>
-        <category>每日一题</category>
-      </categories>
-      <tags>
-        <tag>JS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>calibre</title>
     <url>/2018/05/28/2018/calibre/</url>
     <content><![CDATA[<h2 id="kindle工具calibre之格式转换"><a href="#kindle工具calibre之格式转换" class="headerlink" title="kindle工具calibre之格式转换"></a>kindle工具calibre之格式转换</h2><p>利用calibre可以很方便地解决文件格式之间的转换，同时还能进行规则的制定，从而控制渲染效果。</p>
@@ -594,6 +556,44 @@
       </categories>
       <tags>
         <tag>kindle</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue响应式原理</title>
+    <url>/2019/04/10/2018/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<blockquote>
+<p>Vue 的响应式原理中 Object.defineProperty 有什么缺陷？为什么在 Vue 3.0 采用了 Proxy，抛弃了 Object.defineProperty？</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="相关讨论："><a href="#相关讨论：" class="headerlink" title="相关讨论："></a>相关讨论：</h3><ul>
+<li><a href="https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/90" target="_blank" rel="noopener">https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/90</a></li>
+</ul>
+<h3 id="相关阅读："><a href="#相关阅读：" class="headerlink" title="相关阅读："></a>相关阅读：</h3><ul>
+<li><a href></a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>每日一题</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>call和apply</title>
+    <url>/2019/04/04/2018/call%E5%92%8Capply/</url>
+    <content><![CDATA[<blockquote>
+<p>call 和 apply 的区别是什么，哪个性能更好一些</p>
+</blockquote>
+<a id="more"></a>
+<p>call和apply使开发过程中，常用的方法。</p>
+<h3 id="相关参考："><a href="#相关参考：" class="headerlink" title="相关参考："></a>相关参考：</h3><h3 id="自我总结："><a href="#自我总结：" class="headerlink" title="自我总结："></a>自我总结：</h3>]]></content>
+      <categories>
+        <category>每日一题</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
       </tags>
   </entry>
   <entry>
@@ -617,52 +617,6 @@
       </categories>
       <tags>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>express源码解析</title>
-    <url>/2019/03/27/2018/express%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</url>
-    <content><![CDATA[<blockquote>
-<p>Express 是一个极简框架，非常灵活可靠，不关注程序架构，不会引入那些无用的垃圾代码。与其他框架相比这种简洁不可避免导致了部分功能缺失。</p>
-</blockquote>
-<p>Express 对 Node 的封装非常棒，主要来源于以下几个设计：</p>
-<ul>
-<li>中间件</li>
-<li>路由</li>
-<li>子应用</li>
-<li>API函数易用</li>
-</ul>
-<blockquote>
-<p>express 是一款轻快简洁的 node.js web 框架。其使用范围相当广泛，在web开发中，可以帮助我们快速开发web应用。</p>
-</blockquote>
-<p>通过 express 可以创建一个项目。 <code>express -e blog</code></p>
-<h3 id="一、整体分析"><a href="#一、整体分析" class="headerlink" title="一、整体分析"></a>一、整体分析</h3><p>在 node 中，我们可以轻松启用一个服务器。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">http.createServer(<span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">    res.send(<span class="string">'hello world!'</span>);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;).listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
-<p>但是在实际web应用开发过程中，我们需要服务器能监听各种不同的请求，并作出各自的处理。而 <strong>express</strong> 做的就是这样的事情。</p>
-<p><strong>express</strong> 提供路由、中间件、引擎模板。帮助我们快速开发web应用。</p>
-<h3 id="二、中间件-amp-路由"><a href="#二、中间件-amp-路由" class="headerlink" title="二、中间件 &amp; 路由"></a>二、中间件 &amp; 路由</h3><p><strong>中间件</strong> 是一种拦截器的思想，用于在特定的输入输出之前添加一些额外的处理。中间件的设计思想能够为许多架构提供灵活而强大的拓展性。</p>
-<p><strong>中间件设计模型：</strong></p>
-<ul>
-<li><strong>尾递归：</strong> 中间件一个接一个的顺序执行, 习惯于将response响应写在最后一个中间件中；例如<code>express</code>。</li>
-<li><strong>洋葱圈：</strong> 支持 <strong>generator</strong>, 执行顺序是“洋葱圈”模型。 例如<code>koa</code>（node web框架）。</li>
-</ul>
-<p><img src="/images/洋葱圈.png" alt></p>
-<p>在 <strong>Express</strong> 中，中间件的本质就是一个函数，主要用于处理请求响应过程中执行一些操作。</p>
-<p><img src="/images/express中间件.png" alt></p>
-<h3 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h3><ul>
-<li><a href="https://juejin.im/post/59bce35f5188257e70531ec0#heading-9" target="_blank" rel="noopener">Express 实战（一）：概览</a></li>
-<li><a href="https://juejin.im/post/59bce48ef265da066c22fa3a" target="_blank" rel="noopener">Express 实战（四）：中间件</a></li>
-<li><a href="https://juejin.im/post/59c0ef425188257e934966ad" target="_blank" rel="noopener">express源码阅读</a></li>
-<li><a href="https://juejin.im/post/5aa345116fb9a028e52d7217" target="_blank" rel="noopener">Express中间件原理详解</a></li>
-<li><a href="https://juejin.im/post/5b9a23a45188255c9c751b07" target="_blank" rel="noopener">redux, koa, express 中间件实现对比解析</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>原理说明</category>
-      </categories>
-      <tags>
-        <tag>JS</tag>
-        <tag>node</tag>
       </tags>
   </entry>
   <entry>
@@ -843,6 +797,52 @@
       </tags>
   </entry>
   <entry>
+    <title>express源码解析</title>
+    <url>/2019/03/27/2018/express%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</url>
+    <content><![CDATA[<blockquote>
+<p>Express 是一个极简框架，非常灵活可靠，不关注程序架构，不会引入那些无用的垃圾代码。与其他框架相比这种简洁不可避免导致了部分功能缺失。</p>
+</blockquote>
+<p>Express 对 Node 的封装非常棒，主要来源于以下几个设计：</p>
+<ul>
+<li>中间件</li>
+<li>路由</li>
+<li>子应用</li>
+<li>API函数易用</li>
+</ul>
+<blockquote>
+<p>express 是一款轻快简洁的 node.js web 框架。其使用范围相当广泛，在web开发中，可以帮助我们快速开发web应用。</p>
+</blockquote>
+<p>通过 express 可以创建一个项目。 <code>express -e blog</code></p>
+<h3 id="一、整体分析"><a href="#一、整体分析" class="headerlink" title="一、整体分析"></a>一、整体分析</h3><p>在 node 中，我们可以轻松启用一个服务器。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">http.createServer(<span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">    res.send(<span class="string">'hello world!'</span>);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;).listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
+<p>但是在实际web应用开发过程中，我们需要服务器能监听各种不同的请求，并作出各自的处理。而 <strong>express</strong> 做的就是这样的事情。</p>
+<p><strong>express</strong> 提供路由、中间件、引擎模板。帮助我们快速开发web应用。</p>
+<h3 id="二、中间件-amp-路由"><a href="#二、中间件-amp-路由" class="headerlink" title="二、中间件 &amp; 路由"></a>二、中间件 &amp; 路由</h3><p><strong>中间件</strong> 是一种拦截器的思想，用于在特定的输入输出之前添加一些额外的处理。中间件的设计思想能够为许多架构提供灵活而强大的拓展性。</p>
+<p><strong>中间件设计模型：</strong></p>
+<ul>
+<li><strong>尾递归：</strong> 中间件一个接一个的顺序执行, 习惯于将response响应写在最后一个中间件中；例如<code>express</code>。</li>
+<li><strong>洋葱圈：</strong> 支持 <strong>generator</strong>, 执行顺序是“洋葱圈”模型。 例如<code>koa</code>（node web框架）。</li>
+</ul>
+<p><img src="/images/洋葱圈.png" alt></p>
+<p>在 <strong>Express</strong> 中，中间件的本质就是一个函数，主要用于处理请求响应过程中执行一些操作。</p>
+<p><img src="/images/express中间件.png" alt></p>
+<h3 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h3><ul>
+<li><a href="https://juejin.im/post/59bce35f5188257e70531ec0#heading-9" target="_blank" rel="noopener">Express 实战（一）：概览</a></li>
+<li><a href="https://juejin.im/post/59bce48ef265da066c22fa3a" target="_blank" rel="noopener">Express 实战（四）：中间件</a></li>
+<li><a href="https://juejin.im/post/59c0ef425188257e934966ad" target="_blank" rel="noopener">express源码阅读</a></li>
+<li><a href="https://juejin.im/post/5aa345116fb9a028e52d7217" target="_blank" rel="noopener">Express中间件原理详解</a></li>
+<li><a href="https://juejin.im/post/5b9a23a45188255c9c751b07" target="_blank" rel="noopener">redux, koa, express 中间件实现对比解析</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>原理说明</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>https的握手过程</title>
     <url>/2019/04/01/2018/https%E7%9A%84%E6%8F%A1%E6%89%8B%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<blockquote>
@@ -936,45 +936,6 @@
       </tags>
   </entry>
   <entry>
-    <title>mysql备忘录</title>
-    <url>/2018/02/12/2018/mysql%E5%A4%87%E5%BF%98%E5%BD%95/</url>
-    <content><![CDATA[<h3 id="MYSQL常用命令"><a href="#MYSQL常用命令" class="headerlink" title="MYSQL常用命令"></a>MYSQL常用命令</h3><p>1、 数据库</p>
-<ul>
-<li><code>show datatables</code> 显示所有数据库。</li>
-<li><code>create databse &lt;数据库名&gt;</code> 创建数据库。</li>
-<li><code>drop databse &lt;数据库名&gt;</code> 删除制定数据。</li>
-<li><code>use &lt;数据库名&gt;</code> 连接某数据库。</li>
-</ul>
-<p>2、 数据表</p>
-<ul>
-<li><p><code>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;])</code> 创建数据表。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create table MyClass(</span><br><span class="line">id int(4) not null primary key auto_increment,</span><br><span class="line">name char(20) not null,</span><br><span class="line">sex int(4) not null default &apos;0&apos;,</span><br><span class="line">degree double(16,2));</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>rename table 原表名 to 新表名;</code> 更新数据表名称。</p>
-</li>
-<li><code>drop table &lt;表名&gt;</code> 删除数据表，并取消其关联。</li>
-<li><code>insert into &lt;表名&gt; [( &lt;字段名1&gt;[,..&lt;字段名n &gt; ])] values ( 值1 )[, ( 值n )]</code>  向指定数据表插入数据。</li>
-<li><code>select &lt;字段1，字段2，...&gt; from &lt; 表名 &gt; where &lt; 表达式 &gt; order by &lt;字段&gt; limit 0,2;</code> 选择指定的数据。</li>
-<li><code>delete from 表名 where 表达式</code> 删除指定数据。</li>
-<li><code>update 表名 set 字段=新值,… where 条件</code> 更新指定的数据。</li>
-<li><code>alter table 表名 add字段 类型 其他;</code> 可利用该命令进行字段处理。</li>
-</ul>
-<p>3、数据备份</p>
-<ul>
-<li><h3 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h3></li>
-<li><p><code>utf_bin</code> 中，<code>bin</code>指的是二进制。而<code>utf_general_ci</code>中<code>ci</code>是 case insensitive，即大小写不敏感的意思。</p>
-</li>
-<li><code>utf8_unicode_ci</code> 和 <code>utf8_general_ci</code> 对中、英文来说没有实质的差别。<code>utf8_general_ci</code> 校对速度快，但准确度稍差。<code>utf8_unicode_ci</code> 准确度高，但校对速度稍慢。如果你的应用有德语、法语或者俄语，请一定使用<code>utf8_unicode_ci</code> 。一般用 <code>utf8_general_ci</code> 就够了，到现在也没发现问题。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>文档备忘录</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>https证书合法性验证</title>
     <url>/2019/04/01/2018/https%E8%AF%81%E4%B9%A6%E5%90%88%E6%B3%95%E6%80%A7/</url>
     <content><![CDATA[<blockquote>
@@ -1035,6 +996,45 @@
       </categories>
       <tags>
         <tag>https</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql备忘录</title>
+    <url>/2018/02/12/2018/mysql%E5%A4%87%E5%BF%98%E5%BD%95/</url>
+    <content><![CDATA[<h3 id="MYSQL常用命令"><a href="#MYSQL常用命令" class="headerlink" title="MYSQL常用命令"></a>MYSQL常用命令</h3><p>1、 数据库</p>
+<ul>
+<li><code>show datatables</code> 显示所有数据库。</li>
+<li><code>create databse &lt;数据库名&gt;</code> 创建数据库。</li>
+<li><code>drop databse &lt;数据库名&gt;</code> 删除制定数据。</li>
+<li><code>use &lt;数据库名&gt;</code> 连接某数据库。</li>
+</ul>
+<p>2、 数据表</p>
+<ul>
+<li><p><code>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;])</code> 创建数据表。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create table MyClass(</span><br><span class="line">id int(4) not null primary key auto_increment,</span><br><span class="line">name char(20) not null,</span><br><span class="line">sex int(4) not null default &apos;0&apos;,</span><br><span class="line">degree double(16,2));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>rename table 原表名 to 新表名;</code> 更新数据表名称。</p>
+</li>
+<li><code>drop table &lt;表名&gt;</code> 删除数据表，并取消其关联。</li>
+<li><code>insert into &lt;表名&gt; [( &lt;字段名1&gt;[,..&lt;字段名n &gt; ])] values ( 值1 )[, ( 值n )]</code>  向指定数据表插入数据。</li>
+<li><code>select &lt;字段1，字段2，...&gt; from &lt; 表名 &gt; where &lt; 表达式 &gt; order by &lt;字段&gt; limit 0,2;</code> 选择指定的数据。</li>
+<li><code>delete from 表名 where 表达式</code> 删除指定数据。</li>
+<li><code>update 表名 set 字段=新值,… where 条件</code> 更新指定的数据。</li>
+<li><code>alter table 表名 add字段 类型 其他;</code> 可利用该命令进行字段处理。</li>
+</ul>
+<p>3、数据备份</p>
+<ul>
+<li><h3 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h3></li>
+<li><p><code>utf_bin</code> 中，<code>bin</code>指的是二进制。而<code>utf_general_ci</code>中<code>ci</code>是 case insensitive，即大小写不敏感的意思。</p>
+</li>
+<li><code>utf8_unicode_ci</code> 和 <code>utf8_general_ci</code> 对中、英文来说没有实质的差别。<code>utf8_general_ci</code> 校对速度快，但准确度稍差。<code>utf8_unicode_ci</code> 准确度高，但校对速度稍慢。如果你的应用有德语、法语或者俄语，请一定使用<code>utf8_unicode_ci</code> 。一般用 <code>utf8_general_ci</code> 就够了，到现在也没发现问题。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>文档备忘录</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -1143,12 +1143,38 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-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
+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
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>自我反思</category>
       </categories>
+  </entry>
+  <entry>
+    <title>初探react</title>
+    <url>/2019/03/25/2018/%E5%88%9D%E6%8E%A2react/</url>
+    <content><![CDATA[<blockquote>
+<p>react.js 作为一个热门的 JavaScript 库，其用于组件化开发，提升我们的开发效率。现在就让我们走进 react.js</p>
+</blockquote>
+<h3 id="一、我们需要知道什么"><a href="#一、我们需要知道什么" class="headerlink" title="一、我们需要知道什么"></a>一、我们需要知道什么</h3><p>元素和组件构成 <strong>React</strong> 应用。</p>
+<ul>
+<li><strong>JSX</strong>:</li>
+<li><strong>元素</strong>：元素是构成 React 应用的最小单位，用来描述你在屏幕上看到的内容。元素本身是一个普通对象，构成组件的一部分。</li>
+<li><strong>组件</strong>：将 UI 切分为一些独立、可复用的小部件。props只读，保证数据的单向传递</li>
+</ul>
+<p>官方脚手架 <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">create-react-app</a></p>
+<h3 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h3><ul>
+<li><a href="https://reactjs.org/" target="_blank" rel="noopener">react官网</a></li>
+<li><a href="https://react.docschina.org/" target="_blank" rel="noopener">react中文网</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端开发框架+库</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+        <tag>react</tag>
+      </tags>
   </entry>
   <entry>
     <title>伪数组</title>
@@ -1187,32 +1213,6 @@ U2FsdGVkX1+gFrGiRwVrOYepF5J/9ccVhWuhuHimUf1VmOL0aq1HQTNjqfNN2fCEW/5Ioa7o01a5Fsc8
       </tags>
   </entry>
   <entry>
-    <title>初探react</title>
-    <url>/2019/03/25/2018/%E5%88%9D%E6%8E%A2react/</url>
-    <content><![CDATA[<blockquote>
-<p>react.js 作为一个热门的 JavaScript 库，其用于组件化开发，提升我们的开发效率。现在就让我们走进 react.js</p>
-</blockquote>
-<h3 id="一、我们需要知道什么"><a href="#一、我们需要知道什么" class="headerlink" title="一、我们需要知道什么"></a>一、我们需要知道什么</h3><p>元素和组件构成 <strong>React</strong> 应用。</p>
-<ul>
-<li><strong>JSX</strong>:</li>
-<li><strong>元素</strong>：元素是构成 React 应用的最小单位，用来描述你在屏幕上看到的内容。元素本身是一个普通对象，构成组件的一部分。</li>
-<li><strong>组件</strong>：将 UI 切分为一些独立、可复用的小部件。props只读，保证数据的单向传递</li>
-</ul>
-<p>官方脚手架 <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">create-react-app</a></p>
-<h3 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h3><ul>
-<li><a href="https://reactjs.org/" target="_blank" rel="noopener">react官网</a></li>
-<li><a href="https://react.docschina.org/" target="_blank" rel="noopener">react中文网</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>前端开发框架+库</category>
-      </categories>
-      <tags>
-        <tag>JS</tag>
-        <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>利用bat第二弹</title>
     <url>/2019/03/26/2018/%E5%88%A9%E7%94%A8bat%E7%AC%AC%E4%BA%8C%E5%BC%B9/</url>
     <content><![CDATA[<blockquote>
@@ -1237,44 +1237,6 @@ U2FsdGVkX1+gFrGiRwVrOYepF5J/9ccVhWuhuHimUf1VmOL0aq1HQTNjqfNN2fCEW/5Ioa7o01a5Fsc8
       </categories>
       <tags>
         <tag>脚本</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>setTimeout、Promise、Async/Await 的区别</title>
-    <url>/2019/02/28/2018/%E5%90%84%E5%BC%82%E6%AD%A5%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<h3 id="相关参考："><a href="#相关参考：" class="headerlink" title="相关参考："></a>相关参考：</h3><ul>
-<li><a href="https://juejin.im/post/5b191d585188257d831e338e" target="_blank" rel="noopener">async await、Promise、setTimeout执行顺序</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/async_function" target="_blank" rel="noopener">async</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/await" target="_blank" rel="noopener">await</a></li>
-<li><a href="https://github.com/xitu/gold-miner/blob/master/TODO/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with.md" target="_blank" rel="noopener">JavaScript 是如何工作的: 事件循环和异步编程的崛起 + 5个如何更好的使用 async/await 编码的技巧</a></li>
-</ul>
-<h3 id="相关问题参考"><a href="#相关问题参考" class="headerlink" title="相关问题参考"></a>相关问题参考</h3><h4 id="执行先后顺序-setTimeout、Promise、Async-Await-对比"><a href="#执行先后顺序-setTimeout、Promise、Async-Await-对比" class="headerlink" title="执行先后顺序 setTimeout、Promise、Async/Await 对比"></a>执行先后顺序 setTimeout、Promise、Async/Await 对比</h4><p>下面函数的执行顺序为？<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'async1 start'</span>);</span><br><span class="line">    <span class="keyword">await</span> async2();</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'async1 end'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'async2'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'start'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'setTimeout'</span>);</span><br><span class="line">&#125;, <span class="number">0</span>);</span><br><span class="line">async1();</span><br><span class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'promise1'</span>);</span><br><span class="line">    resolve();</span><br><span class="line">&#125;).then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'promise2'</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'end'</span>);</span><br></pre></td></tr></table></figure></p>
-<p>node v10.13.0运行结果<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">start</span><br><span class="line">async1 start</span><br><span class="line">async2</span><br><span class="line">promise1</span><br><span class="line">end</span><br><span class="line">promise2</span><br><span class="line">async1 end</span><br><span class="line">setTimeout</span><br></pre></td></tr></table></figure></p>
-<h3 id="调用顺序问题解析："><a href="#调用顺序问题解析：" class="headerlink" title="调用顺序问题解析："></a>调用顺序问题解析：</h3><p><strong>async</strong></p>
-<blockquote>
-<p>async function name([param[, param[, … param]]]) { statements }</p>
-</blockquote>
-<p><code>async</code> 会定义一个返回 AsyncFunction 对象的异步函数。即以 <code>async</code> 声明的函数，会隐式地返回一个 <code>Promise</code> 对象。当这个 <code>async</code> 函数返回一个值时，<code>Promise</code> 的 <code>resolve</code> 方法会负责传递这个值；当 <code>async</code> 函数抛出异常时，<code>Promise</code> 的 <code>reject</code> 方法也会传递这个异常值。</p>
-<p><strong>await</strong></p>
-<blockquote>
-<p>[return_value] = await expression;</p>
-</blockquote>
-<p><code>await</code> 操作符用于等待一个 <code>Promise</code> 对象。它返回 <code>Promise</code> 对象的处理结果。如果等待的不是 <code>Promise</code> 对象，则返回该值本身。</p>
-<blockquote>
-<p>注意：<br><code>await</code> 只能在异步函数 <code>async function</code> 中使用。<br>如果你希望并行等待两个或者是更多的 <code>Promise</code> 对象，你必须使用<code>Promise.then</code>，而不是<code>await</code>。</p>
-</blockquote>
-<p><strong>队列任务优先级：</strong><code>promise.Trick()</code> &gt; <code>promise的回调</code> &gt; <code>setTimeout</code> &gt; <code>setImmediate</code></p>
-<p>因此上述代码可以理解成：（部分用语可能不准确）</p>
-<p>在同步执行阶段：<br><code>async1</code>执行到<code>await async2()</code>时，<code>sync2()</code>返回一个<code>Promise</code>, 其<code>resolve</code>放入到回调队列中，跳出<code>async1</code>，执行<code>new promise</code>的<code>resolve</code>时，该<code>resolve</code>也会被放入回调队列中。然后执行到<code>console.log(&#39;end&#39;);</code>，此时同步执行结束。</p>
-<p><strong>重点（执行回调队列）</strong>：<br>此时<code>async2()</code>返回的 Promise的<code>resolve</code>会被执行，即执行<code>await async2()</code>，此时<code>await</code>的<code>Promise</code>的<code>resolve</code>会被放入到新回调队列。此时原回调队列中<code>new promise</code>的<code>resolve</code>会被执行，<code>promise2</code>字符被打印，原回调队列执行完毕。</p>
-<p>执行新回调队列：<br><code>await</code>的<code>Promise</code>的<code>resolve</code>被执行，<code>console.log(&#39;async1 end&#39;)</code>执行。<code>async1()</code>返回的<code>Promise</code>的<code>resolve</code>会被放入到新回调队列。</p>
-<p>所有回调队列执行完毕，<code>setTimeout</code>执行。</p>
-]]></content>
-      <categories>
-        <category>每日一题</category>
-      </categories>
-      <tags>
-        <tag>JS</tag>
       </tags>
   </entry>
   <entry>
@@ -1355,6 +1317,84 @@ U2FsdGVkX1+gFrGiRwVrOYepF5J/9ccVhWuhuHimUf1VmOL0aq1HQTNjqfNN2fCEW/5Ioa7o01a5Fsc8
       </tags>
   </entry>
   <entry>
+    <title>宏任务和微任务</title>
+    <url>/2019/03/21/2018/%E5%AE%8F%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%BE%AE%E4%BB%BB%E5%8A%A1/</url>
+    <content><![CDATA[<p><a href="/data/聊聊JS异步.pptx">PPT</a></p>
+<h3 id="一、调用栈"><a href="#一、调用栈" class="headerlink" title="一、调用栈"></a>一、调用栈</h3><h3 id="二、事件循环"><a href="#二、事件循环" class="headerlink" title="二、事件循环"></a>二、事件循环</h3><h3 id="三、作业队列和-Promise"><a href="#三、作业队列和-Promise" class="headerlink" title="三、作业队列和 Promise"></a>三、作业队列和 Promise</h3><h3 id="四、相关文章推荐"><a href="#四、相关文章推荐" class="headerlink" title="四、相关文章推荐"></a>四、相关文章推荐</h3><ul>
+<li><a href="https://juejin.im/post/5a05b4576fb9a04519690d42" target="_blank" rel="noopener">https://juejin.im/post/5a05b4576fb9a04519690d42</a></li>
+<li><a href="https://juejin.im/post/5a102e656fb9a044fd1158c6" target="_blank" rel="noopener">https://juejin.im/post/5a102e656fb9a044fd1158c6</a></li>
+<li><a href="https://juejin.im/post/5a221d35f265da43356291cc" target="_blank" rel="noopener">https://juejin.im/post/5a221d35f265da43356291cc</a></li>
+<li><a href="https://juejin.im/entry/56cc0bcf8ac2470053b7c5ab?utm_source=gold-miner&amp;utm_medium=readme&amp;utm_campaign=github" target="_blank" rel="noopener">https://juejin.im/entry/56cc0bcf8ac2470053b7c5ab?utm_source=gold-miner&amp;utm_medium=readme&amp;utm_campaign=github</a></li>
+<li><a href="https://juejin.im/post/5c0d148af265da612637fa76" target="_blank" rel="noopener">https://juejin.im/post/5c0d148af265da612637fa76</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>基础原理</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+        <tag>原理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>setTimeout、Promise、Async/Await 的区别</title>
+    <url>/2019/02/28/2018/%E5%90%84%E5%BC%82%E6%AD%A5%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<h3 id="相关参考："><a href="#相关参考：" class="headerlink" title="相关参考："></a>相关参考：</h3><ul>
+<li><a href="https://juejin.im/post/5b191d585188257d831e338e" target="_blank" rel="noopener">async await、Promise、setTimeout执行顺序</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/async_function" target="_blank" rel="noopener">async</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/await" target="_blank" rel="noopener">await</a></li>
+<li><a href="https://github.com/xitu/gold-miner/blob/master/TODO/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with.md" target="_blank" rel="noopener">JavaScript 是如何工作的: 事件循环和异步编程的崛起 + 5个如何更好的使用 async/await 编码的技巧</a></li>
+</ul>
+<h3 id="相关问题参考"><a href="#相关问题参考" class="headerlink" title="相关问题参考"></a>相关问题参考</h3><h4 id="执行先后顺序-setTimeout、Promise、Async-Await-对比"><a href="#执行先后顺序-setTimeout、Promise、Async-Await-对比" class="headerlink" title="执行先后顺序 setTimeout、Promise、Async/Await 对比"></a>执行先后顺序 setTimeout、Promise、Async/Await 对比</h4><p>下面函数的执行顺序为？<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'async1 start'</span>);</span><br><span class="line">    <span class="keyword">await</span> async2();</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'async1 end'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'async2'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'start'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'setTimeout'</span>);</span><br><span class="line">&#125;, <span class="number">0</span>);</span><br><span class="line">async1();</span><br><span class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'promise1'</span>);</span><br><span class="line">    resolve();</span><br><span class="line">&#125;).then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'promise2'</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'end'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>node v10.13.0运行结果<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">start</span><br><span class="line">async1 start</span><br><span class="line">async2</span><br><span class="line">promise1</span><br><span class="line">end</span><br><span class="line">promise2</span><br><span class="line">async1 end</span><br><span class="line">setTimeout</span><br></pre></td></tr></table></figure></p>
+<h3 id="调用顺序问题解析："><a href="#调用顺序问题解析：" class="headerlink" title="调用顺序问题解析："></a>调用顺序问题解析：</h3><p><strong>async</strong></p>
+<blockquote>
+<p>async function name([param[, param[, … param]]]) { statements }</p>
+</blockquote>
+<p><code>async</code> 会定义一个返回 AsyncFunction 对象的异步函数。即以 <code>async</code> 声明的函数，会隐式地返回一个 <code>Promise</code> 对象。当这个 <code>async</code> 函数返回一个值时，<code>Promise</code> 的 <code>resolve</code> 方法会负责传递这个值；当 <code>async</code> 函数抛出异常时，<code>Promise</code> 的 <code>reject</code> 方法也会传递这个异常值。</p>
+<p><strong>await</strong></p>
+<blockquote>
+<p>[return_value] = await expression;</p>
+</blockquote>
+<p><code>await</code> 操作符用于等待一个 <code>Promise</code> 对象。它返回 <code>Promise</code> 对象的处理结果。如果等待的不是 <code>Promise</code> 对象，则返回该值本身。</p>
+<blockquote>
+<p>注意：<br><code>await</code> 只能在异步函数 <code>async function</code> 中使用。<br>如果你希望并行等待两个或者是更多的 <code>Promise</code> 对象，你必须使用<code>Promise.then</code>，而不是<code>await</code>。</p>
+</blockquote>
+<p><strong>队列任务优先级：</strong><code>promise.Trick()</code> &gt; <code>promise的回调</code> &gt; <code>setTimeout</code> &gt; <code>setImmediate</code></p>
+<p>因此上述代码可以理解成：（部分用语可能不准确）</p>
+<p>在同步执行阶段：<br><code>async1</code>执行到<code>await async2()</code>时，<code>sync2()</code>返回一个<code>Promise</code>, 其<code>resolve</code>放入到回调队列中，跳出<code>async1</code>，执行<code>new promise</code>的<code>resolve</code>时，该<code>resolve</code>也会被放入回调队列中。然后执行到<code>console.log(&#39;end&#39;);</code>，此时同步执行结束。</p>
+<p><strong>重点（执行回调队列）</strong>：<br>此时<code>async2()</code>返回的 Promise的<code>resolve</code>会被执行，即执行<code>await async2()</code>，此时<code>await</code>的<code>Promise</code>的<code>resolve</code>会被放入到新回调队列。此时原回调队列中<code>new promise</code>的<code>resolve</code>会被执行，<code>promise2</code>字符被打印，原回调队列执行完毕。</p>
+<p>执行新回调队列：<br><code>await</code>的<code>Promise</code>的<code>resolve</code>被执行，<code>console.log(&#39;async1 end&#39;)</code>执行。<code>async1()</code>返回的<code>Promise</code>的<code>resolve</code>会被放入到新回调队列。</p>
+<p>所有回调队列执行完毕，<code>setTimeout</code>执行。</p>
+]]></content>
+      <categories>
+        <category>每日一题</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>库存管理相关页面优化思考</title>
+    <url>/2019/03/13/2018/%E5%BA%93%E5%AD%98%E7%AE%A1%E7%90%86%E7%9B%B8%E5%85%B3%E9%A1%B5%E9%9D%A2%E4%BC%98%E5%8C%96%E6%80%9D%E8%80%83/</url>
+    <content><![CDATA[<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="请先输入文章密码" />
+    <label for="pass">请先输入文章密码</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>自我反思</category>
+      </categories>
+  </entry>
+  <entry>
     <title>异步编程</title>
     <url>/2019/03/05/2018/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</url>
     <content><![CDATA[<p>JavaScript 是单线程的，而为了避免耗时较为严重的任务影响整体任务，异步编程就显得尤为重要了。</p>
@@ -1386,26 +1426,6 @@ U2FsdGVkX1+gFrGiRwVrOYepF5J/9ccVhWuhuHimUf1VmOL0aq1HQTNjqfNN2fCEW/5Ioa7o01a5Fsc8
       <tags>
         <tag>JS</tag>
         <tag>底层原理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>宏任务和微任务</title>
-    <url>/2019/03/21/2018/%E5%AE%8F%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%BE%AE%E4%BB%BB%E5%8A%A1/</url>
-    <content><![CDATA[<p><a href="/data/聊聊JS异步.pptx">PPT</a></p>
-<h3 id="一、调用栈"><a href="#一、调用栈" class="headerlink" title="一、调用栈"></a>一、调用栈</h3><h3 id="二、事件循环"><a href="#二、事件循环" class="headerlink" title="二、事件循环"></a>二、事件循环</h3><h3 id="三、作业队列和-Promise"><a href="#三、作业队列和-Promise" class="headerlink" title="三、作业队列和 Promise"></a>三、作业队列和 Promise</h3><h3 id="四、相关文章推荐"><a href="#四、相关文章推荐" class="headerlink" title="四、相关文章推荐"></a>四、相关文章推荐</h3><ul>
-<li><a href="https://juejin.im/post/5a05b4576fb9a04519690d42" target="_blank" rel="noopener">https://juejin.im/post/5a05b4576fb9a04519690d42</a></li>
-<li><a href="https://juejin.im/post/5a102e656fb9a044fd1158c6" target="_blank" rel="noopener">https://juejin.im/post/5a102e656fb9a044fd1158c6</a></li>
-<li><a href="https://juejin.im/post/5a221d35f265da43356291cc" target="_blank" rel="noopener">https://juejin.im/post/5a221d35f265da43356291cc</a></li>
-<li><a href="https://juejin.im/entry/56cc0bcf8ac2470053b7c5ab?utm_source=gold-miner&amp;utm_medium=readme&amp;utm_campaign=github" target="_blank" rel="noopener">https://juejin.im/entry/56cc0bcf8ac2470053b7c5ab?utm_source=gold-miner&amp;utm_medium=readme&amp;utm_campaign=github</a></li>
-<li><a href="https://juejin.im/post/5c0d148af265da612637fa76" target="_blank" rel="noopener">https://juejin.im/post/5c0d148af265da612637fa76</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>基础原理</category>
-      </categories>
-      <tags>
-        <tag>JS</tag>
-        <tag>原理</tag>
       </tags>
   </entry>
   <entry>
@@ -1454,26 +1474,6 @@ U2FsdGVkX1+gFrGiRwVrOYepF5J/9ccVhWuhuHimUf1VmOL0aq1HQTNjqfNN2fCEW/5Ioa7o01a5Fsc8
       </tags>
   </entry>
   <entry>
-    <title>库存管理相关页面优化思考</title>
-    <url>/2019/03/13/2018/%E5%BA%93%E5%AD%98%E7%AE%A1%E7%90%86%E7%9B%B8%E5%85%B3%E9%A1%B5%E9%9D%A2%E4%BC%98%E5%8C%96%E6%80%9D%E8%80%83/</url>
-    <content><![CDATA[<div id="hbe-security">
-  <div class="hbe-input-container">
-  <input type="password" class="hbe-form-control" id="pass" placeholder="请先输入文章密码" />
-    <label for="pass">请先输入文章密码</label>
-    <div class="bottom-line"></div>
-  </div>
-</div>
-<div id="decryptionError" style="display: none;">Incorrect Password!</div>
-<div id="noContentError" style="display: none;">No content to display!</div>
-<div id="encrypt-blog" style="display:none">
-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
-</div>
-<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>自我反思</category>
-      </categories>
-  </entry>
-  <entry>
     <title>数组扁平去重排序</title>
     <url>/2019/03/05/2018/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8E%BB%E9%87%8D%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<blockquote>
@@ -1505,17 +1505,6 @@ U2FsdGVkX19dMf8MZbfZ8yP2QsX4+oVLXa1A+4OTHSBvcODsmyRjqjXah9uUS8xIrLFnlzLHGBYSEpUg
       </tags>
   </entry>
   <entry>
-    <title>理财书籍推荐</title>
-    <url>/2018/01/28/2018/%E7%90%86%E8%B4%A2%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<h2 id="富爸爸穷爸爸"><a href="#富爸爸穷爸爸" class="headerlink" title="富爸爸穷爸爸"></a>富爸爸穷爸爸</h2><h2 id="有钱人和你想的不一样"><a href="#有钱人和你想的不一样" class="headerlink" title="有钱人和你想的不一样"></a>有钱人和你想的不一样</h2><h2 id="听富翁讲故事"><a href="#听富翁讲故事" class="headerlink" title="听富翁讲故事"></a>听富翁讲故事</h2><h2 id="牛奶可乐经济学"><a href="#牛奶可乐经济学" class="headerlink" title="牛奶可乐经济学"></a>牛奶可乐经济学</h2><h2 id="泥鸽靶"><a href="#泥鸽靶" class="headerlink" title="泥鸽靶"></a>泥鸽靶</h2><h2 id="股票作手回忆录"><a href="#股票作手回忆录" class="headerlink" title="股票作手回忆录"></a>股票作手回忆录</h2><h2 id="黄金游戏"><a href="#黄金游戏" class="headerlink" title="黄金游戏"></a>黄金游戏</h2><h2 id="隔壁的百万富翁"><a href="#隔壁的百万富翁" class="headerlink" title="隔壁的百万富翁"></a>隔壁的百万富翁</h2><h2 id="小狗钱钱"><a href="#小狗钱钱" class="headerlink" title="小狗钱钱"></a>小狗钱钱</h2>]]></content>
-      <categories>
-        <category>书籍</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深度优先遍历和广度优先</title>
     <url>/2019/02/26/2018/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86%E5%92%8C%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88/</url>
     <content><![CDATA[<h3 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h3><ul>
@@ -1529,6 +1518,17 @@ U2FsdGVkX19dMf8MZbfZ8yP2QsX4+oVLXa1A+4OTHSBvcODsmyRjqjXah9uUS8xIrLFnlzLHGBYSEpUg
       </categories>
       <tags>
         <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>理财书籍推荐</title>
+    <url>/2018/01/28/2018/%E7%90%86%E8%B4%A2%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h2 id="富爸爸穷爸爸"><a href="#富爸爸穷爸爸" class="headerlink" title="富爸爸穷爸爸"></a>富爸爸穷爸爸</h2><h2 id="有钱人和你想的不一样"><a href="#有钱人和你想的不一样" class="headerlink" title="有钱人和你想的不一样"></a>有钱人和你想的不一样</h2><h2 id="听富翁讲故事"><a href="#听富翁讲故事" class="headerlink" title="听富翁讲故事"></a>听富翁讲故事</h2><h2 id="牛奶可乐经济学"><a href="#牛奶可乐经济学" class="headerlink" title="牛奶可乐经济学"></a>牛奶可乐经济学</h2><h2 id="泥鸽靶"><a href="#泥鸽靶" class="headerlink" title="泥鸽靶"></a>泥鸽靶</h2><h2 id="股票作手回忆录"><a href="#股票作手回忆录" class="headerlink" title="股票作手回忆录"></a>股票作手回忆录</h2><h2 id="黄金游戏"><a href="#黄金游戏" class="headerlink" title="黄金游戏"></a>黄金游戏</h2><h2 id="隔壁的百万富翁"><a href="#隔壁的百万富翁" class="headerlink" title="隔壁的百万富翁"></a>隔壁的百万富翁</h2><h2 id="小狗钱钱"><a href="#小狗钱钱" class="headerlink" title="小狗钱钱"></a>小狗钱钱</h2>]]></content>
+      <categories>
+        <category>书籍</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1612,7 +1612,7 @@ U2FsdGVkX19dMf8MZbfZ8yP2QsX4+oVLXa1A+4OTHSBvcODsmyRjqjXah9uUS8xIrLFnlzLHGBYSEpUg
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-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
+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
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
@@ -1768,6 +1768,23 @@ U2FsdGVkX19eAKbVLJbCD4v29UzmvU/psON6R+IwkEtuDY7BbQjj+aLhT9ydoQBGZnKAsr0G/iRwirbh
       </categories>
   </entry>
   <entry>
+    <title>冒泡排序</title>
+    <url>/2019/04/15/2019-1/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h3 id="相关讨论："><a href="#相关讨论：" class="headerlink" title="相关讨论："></a>相关讨论：</h3><ul>
+<li><a href="https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/94" target="_blank" rel="noopener">https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/94</a></li>
+</ul>
+<h3 id="相关阅读："><a href="#相关阅读：" class="headerlink" title="相关阅读："></a>相关阅读：</h3><ul>
+<li><a href></a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>每日一题</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>token原理</title>
     <url>/2019/04/24/2019-1/token%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<h3 id="一、token"><a href="#一、token" class="headerlink" title="一、token"></a>一、token</h3><h4 id="举个栗子："><a href="#举个栗子：" class="headerlink" title="举个栗子："></a>举个栗子：</h4><p>如何在客户端与服务器断开连接后，客户端不直接存储用户的账号和密码的情况下，实现自动登录，即避免用户多次输入登录。（持久化登录）</p>
@@ -1804,23 +1821,6 @@ U2FsdGVkX19eAKbVLJbCD4v29UzmvU/psON6R+IwkEtuDY7BbQjj+aLhT9ydoQBGZnKAsr0G/iRwirbh
       </categories>
       <tags>
         <tag>原理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>冒泡排序</title>
-    <url>/2019/04/15/2019-1/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h3 id="相关讨论："><a href="#相关讨论：" class="headerlink" title="相关讨论："></a>相关讨论：</h3><ul>
-<li><a href="https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/94" target="_blank" rel="noopener">https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/94</a></li>
-</ul>
-<h3 id="相关阅读："><a href="#相关阅读：" class="headerlink" title="相关阅读："></a>相关阅读：</h3><ul>
-<li><a href></a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>每日一题</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -2187,30 +2187,6 @@ U2FsdGVkX19eAKbVLJbCD4v29UzmvU/psON6R+IwkEtuDY7BbQjj+aLhT9ydoQBGZnKAsr0G/iRwirbh
       </tags>
   </entry>
   <entry>
-    <title>2020-06-16</title>
-    <url>/2020/06/16/fe-daily/2020-06-16/</url>
-    <content><![CDATA[<h2 id="每日学习一点小知识："><a href="#每日学习一点小知识：" class="headerlink" title="每日学习一点小知识："></a>每日学习一点小知识：</h2><ul>
-<li>[html] <a href="https://github.com/haizlin/fe-interview/issues/2520" target="_blank" rel="noopener">http 和 websocket 能共用一个端口吗？为什么？</a></li>
-<li>[css] <a href="https://github.com/haizlin/fe-interview/issues/2521" target="_blank" rel="noopener">举例说明background-repeat的新属性值：round和space的作用是什么？</a></li>
-<li>[js] <a href="https://github.com/haizlin/fe-interview/issues/2522" target="_blank" rel="noopener">不用 + eval Function 实现加法</a></li>
-<li>[软技能] <a href="https://github.com/haizlin/fe-interview/issues/2523" target="_blank" rel="noopener">让你去重构一个很老旧但很重要的系统，你的方法论是什么？</a></li>
-</ul>
-<a id="more"></a>
-<h2 id="http-和-websocket-能共用一个端口吗？为什么？"><a href="#http-和-websocket-能共用一个端口吗？为什么？" class="headerlink" title="http 和 websocket 能共用一个端口吗？为什么？"></a>http 和 websocket 能共用一个端口吗？为什么？</h2><p>先说结论，<strong>YES！</strong> http 可以和 WebSocket 共用同一个端口。</p>
-<p>http 和 WebSocket 都是应用层的协议。而端口是写在传输层协议上的，无论是 http 还是 WebSocket 都是基于 TCP 协议的。具体一点的话，可以理解为当客户端和服务器通信时会通过双方的 IP 和端口形成一条通信管道（抽象就是双方按照给定地址发送信息包给对方），在这条通信管道中会根据需要创建 N 个 TCP 连接，这些连接有的是用 http 协议，有的是用 WebSocket。</p>
-<p><strong>使用 Node.js 实现 http 和 WebSocket 共用同一个端口：</strong></p>
-<h2 id="举例说明background-repeat的新属性值：round和space的作用是什么？"><a href="#举例说明background-repeat的新属性值：round和space的作用是什么？" class="headerlink" title="举例说明background-repeat的新属性值：round和space的作用是什么？"></a>举例说明background-repeat的新属性值：round和space的作用是什么？</h2><h2 id="不用-eval-Function-实现加法"><a href="#不用-eval-Function-实现加法" class="headerlink" title="不用 + eval Function 实现加法"></a>不用 + eval Function 实现加法</h2><h2 id="让你去重构一个很老旧但很重要的系统，你的方法论是什么？"><a href="#让你去重构一个很老旧但很重要的系统，你的方法论是什么？" class="headerlink" title="让你去重构一个很老旧但很重要的系统，你的方法论是什么？"></a>让你去重构一个很老旧但很重要的系统，你的方法论是什么？</h2>]]></content>
-      <categories>
-        <category>每日学习</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-        <tag>html</tag>
-        <tag>js</tag>
-        <tag>软技能</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2020-06-17</title>
     <url>/2020/06/17/fe-daily/2020-06-17/</url>
     <content><![CDATA[<h2 id="每日学习一点小知识："><a href="#每日学习一点小知识：" class="headerlink" title="每日学习一点小知识："></a>每日学习一点小知识：</h2><ul>
@@ -2245,6 +2221,82 @@ U2FsdGVkX19eAKbVLJbCD4v29UzmvU/psON6R+IwkEtuDY7BbQjj+aLhT9ydoQBGZnKAsr0G/iRwirbh
         <tag>html</tag>
         <tag>js</tag>
         <tag>软技能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2020-06-16</title>
+    <url>/2020/06/16/fe-daily/2020-06-16/</url>
+    <content><![CDATA[<h2 id="每日学习一点小知识："><a href="#每日学习一点小知识：" class="headerlink" title="每日学习一点小知识："></a>每日学习一点小知识：</h2><ul>
+<li>[html] <a href="https://github.com/haizlin/fe-interview/issues/2520" target="_blank" rel="noopener">http 和 websocket 能共用一个端口吗？为什么？</a></li>
+<li>[css] <a href="https://github.com/haizlin/fe-interview/issues/2521" target="_blank" rel="noopener">举例说明background-repeat的新属性值：round和space的作用是什么？</a></li>
+<li>[js] <a href="https://github.com/haizlin/fe-interview/issues/2522" target="_blank" rel="noopener">不用 + eval Function 实现加法</a></li>
+<li>[软技能] <a href="https://github.com/haizlin/fe-interview/issues/2523" target="_blank" rel="noopener">让你去重构一个很老旧但很重要的系统，你的方法论是什么？</a></li>
+</ul>
+<a id="more"></a>
+<h2 id="http-和-websocket-能共用一个端口吗？为什么？"><a href="#http-和-websocket-能共用一个端口吗？为什么？" class="headerlink" title="http 和 websocket 能共用一个端口吗？为什么？"></a>http 和 websocket 能共用一个端口吗？为什么？</h2><p>先说结论，<strong>YES！</strong> http 可以和 WebSocket 共用同一个端口。</p>
+<p>http 和 WebSocket 都是应用层的协议。而端口是写在传输层协议上的，无论是 http 还是 WebSocket 都是基于 TCP 协议的。具体一点的话，可以理解为当客户端和服务器通信时会通过双方的 IP 和端口形成一条通信管道（抽象就是双方按照给定地址发送信息包给对方），在这条通信管道中会根据需要创建 N 个 TCP 连接，这些连接有的是用 http 协议，有的是用 WebSocket。</p>
+<p><strong>使用 Node.js 实现 http 和 WebSocket 共用同一个端口：</strong></p>
+<h2 id="举例说明background-repeat的新属性值：round和space的作用是什么？"><a href="#举例说明background-repeat的新属性值：round和space的作用是什么？" class="headerlink" title="举例说明background-repeat的新属性值：round和space的作用是什么？"></a>举例说明background-repeat的新属性值：round和space的作用是什么？</h2><h2 id="不用-eval-Function-实现加法"><a href="#不用-eval-Function-实现加法" class="headerlink" title="不用 + eval Function 实现加法"></a>不用 + eval Function 实现加法</h2><h2 id="让你去重构一个很老旧但很重要的系统，你的方法论是什么？"><a href="#让你去重构一个很老旧但很重要的系统，你的方法论是什么？" class="headerlink" title="让你去重构一个很老旧但很重要的系统，你的方法论是什么？"></a>让你去重构一个很老旧但很重要的系统，你的方法论是什么？</h2>]]></content>
+      <categories>
+        <category>每日学习</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>html</tag>
+        <tag>js</tag>
+        <tag>软技能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端·学习笔记</title>
+    <url>/2020/12/18/fe/%E5%89%8D%E7%AB%AF%C2%B7%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>学习记录未知的事物，努力扩大自己的小圈子。（学而时习之，不亦说乎）</p>
+</blockquote>
+<a id="more"></a>
+<!-- toc -->
+<h2 id="常用小技巧"><a href="#常用小技巧" class="headerlink" title="常用小技巧"></a>常用小技巧</h2><ul>
+<li><p><a href="https://zhuanlan.zhihu.com/p/304360774?utm_source=com.facishare.fsneice&amp;utm_medium=social&amp;utm_oi=46648013094912" target="_blank" rel="noopener">写 JS 逻辑判断，不要只知道用 if-else 和 switch - 知乎</a></p>
+<blockquote>
+<p><strong>小结：</strong> 可以利用键值对（object / map）处理复杂的逻辑判断，便于后续维护。【多重判断时，Map 比 Object 更加适合处理】</p>
+</blockquote>
+  <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 不同身份、不同状态处理</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">handle</span>(<span class="params">identity, status</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> actions = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Map</span>([</span><br><span class="line">            [<span class="regexp">/^guest_[1-4]$/</span>, () =&gt; &#123;<span class="built_in">console</span>.log(<span class="string">'操作1'</span>)&#125;],</span><br><span class="line">            [<span class="regexp">/^guest_.*$/</span>, () =&gt; &#123;<span class="built_in">console</span>.log(<span class="string">'操作2'</span>)&#125;],</span><br><span class="line">            [<span class="regexp">/^master_[2-3]$/</span>, () =&gt; &#123;<span class="built_in">console</span>.log(<span class="string">'操作3'</span>)&#125;],</span><br><span class="line">            [<span class="regexp">/^master_.*$/</span>, () =&gt; &#123;<span class="built_in">console</span>.log(<span class="string">'操作4'</span>)&#125;],</span><br><span class="line">        ]);</span><br><span class="line">    &#125;)();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> curRule = <span class="string">`<span class="subst">$&#123;identity&#125;</span>_<span class="subst">$&#123;status&#125;</span>`</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> [rule, action] <span class="keyword">of</span> actions.entries()) &#123;</span><br><span class="line">        <span class="comment">// 优先匹配原则</span></span><br><span class="line">        <span class="keyword">if</span> (rule.test(curRule)) &#123;</span><br><span class="line">            action.call(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>等待更多… ^ ^</p>
+</li>
+</ul>
+<h2 id="对比思考"><a href="#对比思考" class="headerlink" title="对比思考"></a>对比思考</h2><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/337296578" target="_blank" rel="noopener">继承 vs 组合：哪一个更适合你的 JavaScript 项目 - 知乎</a><ul>
+<li>小结： <ul>
+<li>继承：子类借用父类除私有属性方法外的所有公共和受保护的属性和方法。（JavaScript 中，子对象常借用父对象的构造函数（自身新属性）和原型链上的方法）  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>每日一学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue.extend()和extends选项</title>
+    <url>/2021/02/01/vue/extend/</url>
+    <content><![CDATA[<p>Vue.extend() 使用基础 Vue 构造器，创建一个“子类”。参数是一个包含组件选项的对象。其中 data 属性必须是一个函数（这样每个组件的实例的 data 才能是独立的）。</p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Demo = Vue.extend(&#123;</span><br><span class="line">    template: <span class="string">'&lt;p&gt;&#123;&#123;text&#125;&#125;&lt;/p&gt;'</span>,</span><br><span class="line">    data() &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            text: <span class="string">'你好'</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>extends 选项允许声明扩展另一个组件 (可以是一个简单的选项对象或构造函数)，而无需使用 Vue.extend。这主要是为了便于扩展单文件组件。其功能类似 mixins</p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> CompA = &#123; ... &#125;</span><br><span class="line"><span class="comment">// 在没有调用 `Vue.extend` 时候继承 CompA</span></span><br><span class="line"><span class="keyword">var</span> CompB = &#123;</span><br><span class="line">  extends: CompA,</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
@@ -2292,6 +2344,121 @@ U2FsdGVkX19eAKbVLJbCD4v29UzmvU/psON6R+IwkEtuDY7BbQjj+aLhT9ydoQBGZnKAsr0G/iRwirbh
       <tags>
         <tag>JS</tag>
         <tag>VUE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TypeScript学习笔记·2</title>
+    <url>/2020/04/21/2020/TypeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%C2%B72/</url>
+    <content><![CDATA[<p>了解 TypeScript 并加以使用，可以帮助我们提高代码的质量。本文主要是对官方文档上的内容进行个人理解后的知识收集，想了解更详细内容，推荐 <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" rel="noopener">TypeScript官网</a>。</p>
+<blockquote>
+<p><strong>tip:</strong> 在学习了解 TypeScript 的内容时，最好自己去实践一下。</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><p>在软件程序开发设计中，为了提高程序有较好的可读性和健壮性，会将相似的逻辑进行集中统一处理，构建可复用的组件。同理在 TypeScript 中，我们可以利用 <code>泛型</code> 创建可重用的组件/数据类型等。</p>
+<p>在 TypeScript 中，泛型支持：</p>
+<ul>
+<li>泛型函数</li>
+<li>泛型接口</li>
+<li>泛型类</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface GenericIdentityFn&lt;T&gt; &#123;</span><br><span class="line">    (arg: T): T;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function identity&lt;T&gt;(arg: T): T &#123;</span><br><span class="line">    return arg;</span><br><span class="line">&#125;</span><br><span class="line">let myIdentity: GenericIdentityFn&lt;number&gt; = identity;</span><br><span class="line">identity(1);</span><br><span class="line">identity(&apos;a&apos;);</span><br><span class="line">myIdentity(1);</span><br><span class="line">// myIdentity(&apos;a&apos;); // error!</span><br><span class="line"></span><br><span class="line">class GenericNumber&lt;T&gt; &#123;</span><br><span class="line">    zeroValue: T;</span><br><span class="line">    add: (x: T, y: T) =&gt; T;</span><br><span class="line">&#125;</span><br><span class="line">let myGenericNumber = new GenericNumber&lt;number&gt;();</span><br><span class="line">myGenericNumber.zeroValue = 1;</span><br><span class="line">// myGenericNumber.zeroValue = &apos;a&apos;; // error!</span><br></pre></td></tr></table></figure>
+<h4 id="泛型约束"><a href="#泛型约束" class="headerlink" title="泛型约束"></a>泛型约束</h4><p>虽然在使用 <code>泛型</code> 中，如果我们知道要操作的数据具有那些属性，并希望进行相应操作的话，需要对类型变量 T 进行约束。这种情况下，可以通过定义一个接口来描述约束条件，并利用这个接口和 <code>extends</code> 关键字实现约束。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function loggingIdentity&lt;T&gt;(arg: T): T &#123;</span><br><span class="line">    console.log(arg.length);  // Error: T doesn&apos;t have .length</span><br><span class="line">    return arg;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">interface Lengthwise &#123;</span><br><span class="line">    length: number;</span><br><span class="line">&#125;</span><br><span class="line">function loggingIdentity2&lt;T extends Lengthwise&gt;(arg: T): T &#123;</span><br><span class="line">    console.log(arg.length);  // Now we know it has a .length property, so no more error</span><br><span class="line">    return arg;</span><br><span class="line">&#125;</span><br><span class="line">loggingIdentity(&#123;length: 10, value: 3&#125;); // ok</span><br><span class="line">loggingIdentity2(3); // error</span><br></pre></td></tr></table></figure>
+<!--可以传入任意类型数据，但是如果操作了 `泛型` 类型变量的属性防范-->
+<blockquote>
+<p><strong>注意：</strong></p>
+<ul>
+<li>声明的泛型类型参数，可以被另一个类型参数所约束，例如下面获取对象属性的实例中，key</li>
+</ul>
+</blockquote>
+<p>待补充<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getProperty(obj: T, key: K) &#123;</span><br><span class="line">    return obj[key];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let x = &#123; a: 1, b: 2, c: 3, d: 4 &#125;;</span><br><span class="line"></span><br><span class="line">getProperty(x, &quot;a&quot;); // okay</span><br><span class="line">getProperty(x, &quot;m&quot;); // error: Argument of type &apos;m&apos; isn&apos;t assignable to &apos;a&apos; | &apos;b&apos; | &apos;c&apos; | &apos;d&apos;.</span><br></pre></td></tr></table></figure></p>
+<h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p>在编程过程中，为了便于代码阅读和后续维护。我们可以使用枚举清晰地表达意图，与其他内容加以区分。</p>
+<p>TypeScript 支持数字和基于字符串的枚举。使用的时候可以通过访问枚举的属性/名字访问枚举成员。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// 数字枚举</span><br><span class="line">enum Direction &#123;</span><br><span class="line">	Up = 1,</span><br><span class="line">	Down,		// 等价于 Down = 2</span><br><span class="line">	Left = 10,</span><br><span class="line">	Right,		// 等价于 Right = 11</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const test = 12;</span><br><span class="line">enum E &#123;</span><br><span class="line">	A = test,</span><br><span class="line">	B, // error: Enum member must have initializer. 即常量成员不允许紧随计算的成员</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 字符串枚举</span><br><span class="line">enum Direction &#123;</span><br><span class="line">    Up = &quot;UP&quot;,</span><br><span class="line">    Down = &quot;DOWN&quot;,</span><br><span class="line">    Left = &quot;LEFT&quot;,</span><br><span class="line">    Right = &quot;RIGHT&quot;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>需要注意的是：</strong></p>
+<ul>
+<li>数字枚举中，第一个成员默认为 0。其中未赋值的成员相对于之前有值的成员 <strong>自增长</strong>。</li>
+<li>如果在数字枚举中，利用计算的或者常量成员时，不允许不带初始化器的枚举（在正常的枚举里，没有初始化方法的成员被当成 <strong>常数成员</strong>）置于其后。</li>
+<li>与数字枚举不同的是，字符串枚举没有 <strong>自增长行为</strong>。</li>
+<li>在使用枚举的过程中，不建议使用 <strong>异构枚举</strong>（即混合数字和字符串的枚举）。</li>
+<li>枚举不同于接口，枚举是在 <strong>运行时真正存在的对象</strong>。</li>
+<li>在枚举中，除了可以通过枚举成员的名字去访问对应的枚举值，也能够通过枚举值 <strong>反向映射</strong> 到枚举名字。这是因为枚举类型会被编译成一个包含正向映射（name -&gt; value）和反向映射（value -&gt; name）的对象。</li>
+<li>在枚举上使用 <code>const</code> 修饰符的话，可以声明 <strong>常量枚举</strong>。常量枚举只能使用常量枚举表达式，并且不同于常规的枚举，它们在编译阶段会被删除。 常量枚举成员在使用的地方会被内联进来。 之所以可以这么做是因为，常量枚举不允许包含计算成员。</li>
+<li>多文件模块中，对于外部已经存在枚举，可以使用 <strong>外部枚举</strong> 用于描述已存在的枚举类型。</li>
+</ul>
+</blockquote>
+<h3 id="类型推论"><a href="#类型推论" class="headerlink" title="类型推论"></a>类型推论</h3><p>在 TypeScript 中，对于没有明确指明类型的地方，类型推论会帮助提供类型。</p>
+<p>在类型推论过程中，如果需要从表达式中推断类型，TypeScript 会使用这些表达式来推断出一个 <strong>最佳通用类型</strong>。除了表达式外，TypeScript类型推论也可能按照 <strong>上下文</strong> 进行推论。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let x = &apos;2&apos;; // x 被推断为字符串</span><br><span class="line">let y: string = x + 1; // OK！ x 为字符串，计算后的结果也是字符串</span><br><span class="line"></span><br><span class="line">let zoo = [new Rhino(), new Elephant(), new Snake()]; // zoo 没有找到最佳通用类型，被推断为联合数组类型 (Rhino | Elephant | Snake)[]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>备注：</p>
+<p>此处的内容理解得不是很清楚，感觉就是在说 TypeScript 会推论没有声明数据类型的地方，然后进行数据类型校验。</p>
+</blockquote>
+<h3 id="类型兼容性"><a href="#类型兼容性" class="headerlink" title="类型兼容性"></a>类型兼容性</h3><p><strong>结构类型</strong> 是一种只使用其成员描述类型的方式。TypeScript 使用结构类型系统的方式来描述。</p>
+<p>TypeScript结构化类型系统的基本规则是：</p>
+<ul>
+<li>如果 <code>x</code> 要兼容 <code>y</code>，那么 <code>y</code> 至少具有与 <code>x</code> 相同的属性。</li>
+<li>当比较两个函数 <code>x</code> 和 <code>y</code> 时，首先会检查它们的参数列表，<code>x</code> 的每个参数必须能在 <code>y</code> 中找到对应类型的参数。（比较时只看类型不看参数名称，具体可看示例2）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Name &#123;</span><br><span class="line">    name: string;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Person &#123;</span><br><span class="line">    name: string;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let p: Name;</span><br><span class="line">p = new Person(); // ok</span><br><span class="line"></span><br><span class="line">let y = &#123; name: &apos;Alice&apos;, location: &apos;Seattle&apos; &#125;;</span><br><span class="line">p = y; // ok, 这个比较过程是递归进行的，检查每个成员及子成员</span><br></pre></td></tr></table></figure>
+<p>示例2：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let x = (a: number) =&gt; 0;</span><br><span class="line">let y = (b: number, s: string) =&gt; 0;</span><br><span class="line"></span><br><span class="line">y = x; // OK</span><br><span class="line">x = y; // Error</span><br></pre></td></tr></table></figure>
+<h3 id="高级类型"><a href="#高级类型" class="headerlink" title="高级类型"></a>高级类型</h3><p>常用的高级类型有：</p>
+<ul>
+<li>交叉类型</li>
+<li>联合类型</li>
+<li>枚举类型</li>
+<li><code>this</code>类型（在接口、类中，声明 <code>this</code> 返回，可用于链式调用场景）</li>
+<li>索引类型</li>
+</ul>
+<h4 id="交叉类型"><a href="#交叉类型" class="headerlink" title="交叉类型"></a>交叉类型</h4><p>在 TypeScript 中，交叉类型用于将多个类型合并为一个类型，使其包含所有类型的特性。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// 交叉类型</span><br><span class="line">function extend&lt;T, U&gt;(first: T, second: U): T &amp; U &#123;</span><br><span class="line">    let result = &lt;T &amp; U&gt;&#123;&#125;;</span><br><span class="line">    for (let id in first) &#123;</span><br><span class="line">        (&lt;any&gt;result)[id] = (&lt;any&gt;first)[id];</span><br><span class="line">    &#125;</span><br><span class="line">    for (let id in second) &#123;</span><br><span class="line">        if (!result.hasOwnProperty(id)) &#123;</span><br><span class="line">            (&lt;any&gt;result)[id] = (&lt;any&gt;second)[id];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Person &#123;</span><br><span class="line">    constructor(public name: string) &#123; &#125;</span><br><span class="line">&#125;</span><br><span class="line">interface Loggable &#123;</span><br><span class="line">    log(): void;</span><br><span class="line">&#125;</span><br><span class="line">class ConsoleLogger implements Loggable &#123;</span><br><span class="line">    log() &#123;</span><br><span class="line">        // ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">var jim = extend(new Person(&quot;Jim&quot;), new ConsoleLogger());</span><br><span class="line">console.log(jim.name);</span><br><span class="line">jim.log();</span><br></pre></td></tr></table></figure>
+<h4 id="联合类型"><a href="#联合类型" class="headerlink" title="联合类型"></a>联合类型</h4><p>联合类型在使用上不同于交叉类型，其常用于表示一个值可以是多种类型之一。使用 <code>|</code> 分隔每个类型。如果一个值是联合类型，访问时只能访问此联合类型中所有类型的共有成员。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class UnionType &#123;</span><br><span class="line">	constructor (public type: string | number) &#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">let ut: UnionType;</span><br><span class="line">ut = new UnionType(&apos;hello&apos;);</span><br><span class="line">ut.type.slice(1); // error</span><br><span class="line"></span><br><span class="line">(&lt;string&gt;ut.type).slice(1);</span><br><span class="line"></span><br><span class="line">function isString (type: string | number): type is string &#123;</span><br><span class="line">	return (&lt;string&gt; type).slice !== undefined;</span><br><span class="line">&#125;</span><br><span class="line">if (isString(ut.type)) &#123;</span><br><span class="line">	ut.type.slice(1)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if (typeof ut.type === &apos;string&apos;) &#123;</span><br><span class="line">	ut.type.slice(1)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>对于在联合类型中，希望访问该类型特有的成员，可以使用一下几种方法：</p>
+<ul>
+<li>如果明确知道了联合类型的具体类型，可以使用类型断言。</li>
+<li>可以使用类型谓词，谓词为 <code>parameterName is Type</code> 这种形式， <code>parameterName</code> 必须是来自于当前函数签名里的一个参数名。</li>
+<li><code>typeof</code> 类型保护：在 TypeScript 中，<code>typeof</code> 能被识别为一个类型保护。只有两种形式能被识别：<code>typeof v === &quot;typename&quot;</code> 和 <code>typeof v !== &quot;typename&quot;</code>， <code>&quot;typename&quot;</code> 必须是 <code>&quot;number&quot;</code>， <code>&quot;string&quot;</code>， <code>&quot;boolean&quot;</code> 或 <code>&quot;symbol&quot;</code>。 但是TypeScript并不会阻止你与其它字符串比较，语言不会把那些表达式识别为类型保护。</li>
+<li><code>instanceof</code> 类型保护：类似于 <code>typeof</code>类型保护，TypeScript 会将其细化为其构造签名。</li>
+</ul>
+</blockquote>
+<h4 id="类型别名"><a href="#类型别名" class="headerlink" title="类型别名"></a>类型别名</h4><p>类型别名会给一个类型起个新名字。 类型别名有时和接口很像，但是可以作用于原始值，联合类型，元组以及其它任何你需要手写的类型。</p>
+<blockquote>
+<p>个人感受：</p>
+<p>类型别名最好配合联合类型或是交叉类型使用。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">type Name = string;</span><br><span class="line">type NameResolver = () =&gt; string;</span><br><span class="line">type NameOrResolver = nu | NameResolver;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>类型别名和接口区别：</p>
+<ul>
+<li>接口创建了新名称，可以在其它任何地方使用，而类型别名并没有创建新名字。</li>
+<li>类型别名不能被 extends和 implements</li>
+<li>接口不能用来描述一个联合类型或是元组类型</li>
+</ul>
+</blockquote>
+<h4 id="索引类型"><a href="#索引类型" class="headerlink" title="索引类型"></a>索引类型</h4><p>在 TypeScript 中可以通过，<strong>索引类型查询</strong> （<code>keyof T</code>） 和 <strong>索引访问 操作符</strong>（<code>T[K]</code>）进行类型判断处理。</p>
+<blockquote>
+<p>新版本貌似去掉了 keyof 关键词</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function pluck&lt;T, K extends keyof T&gt;(o: T, names: K[]): T[K][] &#123;</span><br><span class="line">  return names.map(n =&gt; o[n]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">interface Person &#123;</span><br><span class="line">    name: string;</span><br><span class="line">    age: number;</span><br><span class="line">&#125;</span><br><span class="line">let person: Person = &#123;</span><br><span class="line">    name: &apos;Jarid&apos;,</span><br><span class="line">    age: 35</span><br><span class="line">&#125;;</span><br><span class="line">let strings: string[] = pluck(person, [&apos;name&apos;]); // ok, string[]</span><br></pre></td></tr></table></figure>
+<h3 id="Symbols"><a href="#Symbols" class="headerlink" title="Symbols"></a>Symbols</h3><p>自 ECMAScript 2015 起，<code>symbol</code> 成为了一种新的原生类型，就像 <code>number</code> 和 <code>string</code> 一样。</p>
+<p>Symbols 是不可改变且唯一的。同时 Symbols 也可以用做对象的键值。在 ECMAScript 目前无私有属性的情况，下也用于定义私有属性。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let sym2 = Symbol(&quot;key&quot;);</span><br><span class="line">let sym3 = Symbol(&quot;key&quot;);</span><br><span class="line"></span><br><span class="line">sym2 === sym3; // false, symbols是唯一的</span><br><span class="line"></span><br><span class="line">const name = Symbol()</span><br></pre></td></tr></table></figure>
+<p>事实上，除了用户自定义的 symbol，语言内部也内置了一些 symbol 行为。其中 <code>for..of</code> 会遍历可迭代的对象，调用对象上的 <code>Symbol.iterator</code> 方法。</p>
+<blockquote>
+<p>需要注意的是：</p>
+<p>当生成目标为ES5或ES3，迭代器只允许在Array类型上使用。 在非数组值上使用 for..of语句会得到一个错误，就算这些非数组值已经实现了Symbol.iterator属性。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端工具</category>
+      </categories>
+      <tags>
+        <tag>TypeScript</tag>
+        <tag>Tools</tag>
       </tags>
   </entry>
   <entry>
@@ -2424,118 +2591,208 @@ U2FsdGVkX19eAKbVLJbCD4v29UzmvU/psON6R+IwkEtuDY7BbQjj+aLhT9ydoQBGZnKAsr0G/iRwirbh
       </tags>
   </entry>
   <entry>
-    <title>TypeScript学习笔记·2</title>
-    <url>/2020/04/21/2020/TypeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%C2%B72/</url>
-    <content><![CDATA[<p>了解 TypeScript 并加以使用，可以帮助我们提高代码的质量。本文主要是对官方文档上的内容进行个人理解后的知识收集，想了解更详细内容，推荐 <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" rel="noopener">TypeScript官网</a>。</p>
-<blockquote>
-<p><strong>tip:</strong> 在学习了解 TypeScript 的内容时，最好自己去实践一下。</p>
-</blockquote>
+    <title>前端CSS试题</title>
+    <url>/2020/10/09/blog/fe-questions/%E5%89%8D%E7%AB%AFCSS%E8%AF%95%E9%A2%98/</url>
+    <content><![CDATA[<p>收集了解前端试题，温故而知新！！！</p>
 <a id="more"></a>
-<h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><p>在软件程序开发设计中，为了提高程序有较好的可读性和健壮性，会将相似的逻辑进行集中统一处理，构建可复用的组件。同理在 TypeScript 中，我们可以利用 <code>泛型</code> 创建可重用的组件/数据类型等。</p>
-<p>在 TypeScript 中，泛型支持：</p>
-<ul>
-<li>泛型函数</li>
-<li>泛型接口</li>
-<li>泛型类</li>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
+<li><a href="#l1">1. css盒子模型，box-sizing属性的理解</a></li>
+<li><a href="#l2">2. 清除浮动，什么时候需要清除浮动，清除浮动都有哪些方法</a></li>
+<li><a href="#l3">3. 如何让一个不定宽高的盒子水平垂直居中</a></li>
+<li><a href="#l4">4. px、em 和 rem 的区别</a></li>
+<li><a href="#l5">5. position 各个定位的区别</a></li>
+<li><a href="#l6">6. display:none 与 visibility：hidden 的区别</a></li>
+<li><a href="#l7">7. CSS 中 link 和 @import 的区别</a></li>
+<li><a href="#l8">8. 什么是响应式设计，响应式设计的基本原理是什么</a></li>
+<li><a href="#l9">9. 为什么要初始化CSS样式</a></li>
+<li><a href="#l10">10. CSS3有哪些新特性</a></li>
+<li><a href="#l11">11. ::before 和 :after中双冒号和单冒号有什么区别？解释一下这2个伪元素的作用</a></li>
+<li><a href="#l12">12. CSS优化、提高性能的方法有哪些</a></li>
+<li><a href="#l13">13. 重绘和回流</a></li>
+<li><a href="#l14">14. flex 布局</a></li>
+<li><a href="#l15">15. grid 布局</a></li>
+<li><a href="#l16">16. css预处理器</a></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface GenericIdentityFn&lt;T&gt; &#123;</span><br><span class="line">    (arg: T): T;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function identity&lt;T&gt;(arg: T): T &#123;</span><br><span class="line">    return arg;</span><br><span class="line">&#125;</span><br><span class="line">let myIdentity: GenericIdentityFn&lt;number&gt; = identity;</span><br><span class="line">identity(1);</span><br><span class="line">identity(&apos;a&apos;);</span><br><span class="line">myIdentity(1);</span><br><span class="line">// myIdentity(&apos;a&apos;); // error!</span><br><span class="line"></span><br><span class="line">class GenericNumber&lt;T&gt; &#123;</span><br><span class="line">    zeroValue: T;</span><br><span class="line">    add: (x: T, y: T) =&gt; T;</span><br><span class="line">&#125;</span><br><span class="line">let myGenericNumber = new GenericNumber&lt;number&gt;();</span><br><span class="line">myGenericNumber.zeroValue = 1;</span><br><span class="line">// myGenericNumber.zeroValue = &apos;a&apos;; // error!</span><br></pre></td></tr></table></figure>
-<h4 id="泛型约束"><a href="#泛型约束" class="headerlink" title="泛型约束"></a>泛型约束</h4><p>虽然在使用 <code>泛型</code> 中，如果我们知道要操作的数据具有那些属性，并希望进行相应操作的话，需要对类型变量 T 进行约束。这种情况下，可以通过定义一个接口来描述约束条件，并利用这个接口和 <code>extends</code> 关键字实现约束。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function loggingIdentity&lt;T&gt;(arg: T): T &#123;</span><br><span class="line">    console.log(arg.length);  // Error: T doesn&apos;t have .length</span><br><span class="line">    return arg;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">interface Lengthwise &#123;</span><br><span class="line">    length: number;</span><br><span class="line">&#125;</span><br><span class="line">function loggingIdentity2&lt;T extends Lengthwise&gt;(arg: T): T &#123;</span><br><span class="line">    console.log(arg.length);  // Now we know it has a .length property, so no more error</span><br><span class="line">    return arg;</span><br><span class="line">&#125;</span><br><span class="line">loggingIdentity(&#123;length: 10, value: 3&#125;); // ok</span><br><span class="line">loggingIdentity2(3); // error</span><br></pre></td></tr></table></figure>
-<!--可以传入任意类型数据，但是如果操作了 `泛型` 类型变量的属性防范-->
-<blockquote>
-<p><strong>注意：</strong></p>
+<h4 id="l1">1. css盒子模型，box-sizing属性的理解</h4>
+
+<p>css盒子模型：margin + border + padding + content （由外到内）</p>
+<p><code>box-sizing: content-box(默认) | border-box | inherit;</code> 是 css3 的属性，主要是设置盒子的宽度时，是否仅包含 <code>content</code> 。</p>
+<h4 id="l2">2. 清除浮动，什么时候需要清除浮动，清除浮动都有哪些方法</h4>
+
+<p>浮动的元素是脱离文档标准流的。如果不进行清除浮动，会造成父元素高度塌陷，影响页面的布局。</p>
+<p><strong>清除浮动的方式：</strong></p>
 <ul>
-<li>声明的泛型类型参数，可以被另一个类型参数所约束，例如下面获取对象属性的实例中，key</li>
+<li>给父元素设置高度。（缺点：需要提前知道父元素需要的高度）</li>
+<li>给父元素设置 <code>overflow: hidden;</code> （BFC独立盒子）</li>
+<li>给父元素的伪类设置 <code>clear: both;</code> （更符合语义化）</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 伪类 */</span></span><br><span class="line"><span class="selector-class">.parent</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">visibility</span>: hidden;</span><br><span class="line">    <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>BFC：</strong>（overflow: hidden 可以触发 BFC 机制）</p>
+<p>块级格式化上下文，创建了 BFC 的元素就是一个独立的盒子，它规定了内部如何布局，并且与这个独立盒子里的布局不受外部影响，当然它也不会影响到外面的元素，计算BFC的高度时，浮动元素也参与计算。</p>
+</blockquote>
+<h4 id="l3">3. 如何让一个不定宽高的盒子水平垂直居中</h4>
+
+<ul>
+<li>table-cell + text-align （不再推荐）</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: table-cell;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.child</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>绝对定位 + 移动</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.child</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>flex 布局</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">justify-content</span>: center;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>grid 布局</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: grid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.child</span> &#123;</span><br><span class="line">    <span class="attribute">justify-self</span>: center;</span><br><span class="line">    <span class="attribute">align-self</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="l4">4. px、em 和 rem 的区别</h4>
+
+<ul>
+<li><code>px</code>: 像素，相对长度单位。像素 <code>px</code> 是相对于显示器屏幕分辨率而言的。</li>
+<li><code>em</code> 的值并不是固定的，会继承父级元素的字体大小，代表倍数。</li>
+<li><code>rem</code>的值并不是固定的，始终是基于根元素 <code>&lt;html&gt;</code> 的，也代表倍数。</li>
+</ul>
+<h4 id="l5">5. position 各个定位的区别</h4>
+
+<ul>
+<li><code>static</code>： 默认值。没有定位，元素出现在正常的流中</li>
+<li><code>relative</code>（相对定位）：生成相对定位的元素,相对于其正常（原先本身）位置进行定位</li>
+<li><code>absolute</code>（绝对定位）：生成绝对定位的元素，相对于static定位以外的第一个父元素进行定位</li>
+<li><code>fixed</code>（固定定位）：生成绝对定位的元素，相对于浏览器窗口进行定位</li>
+<li><code>sticky</code> (粘性定位)：基于用户的滚动位置来定位，粘性定位的元素是依赖于用户的滚动，在 position:relative 与 position:fixed 定位之间切换。</li>
+</ul>
+<blockquote>
+<p>关于 <code>position: sticky;</code> 可参考，<a href="https://www.zhangxinxu.com/wordpress/2018/12/css-position-sticky/" target="_blank" rel="noopener">杀了个回马枪，还是说说position:sticky吧</a></p>
+</blockquote>
+<h4 id="l6">6. display:none 与 visibility：hidden 的区别</h4>
+
+<table>
+<thead>
+<tr>
+<th>区别</th>
+<th>display: none;</th>
+<th>visibility: hidden;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否占据空间</td>
+<td>不占据任何空间，在文档渲染时，该元素如同不存在（但依然存在文档对象模型树中）</td>
+<td>该元素空间依旧存在</td>
+</tr>
+<tr>
+<td>是否渲染</td>
+<td>会触发 reflow（回流），进行渲染</td>
+<td>会触发 repaint（重绘），因为没有发现位置变化，不进行渲染</td>
+</tr>
+<tr>
+<td>是否是继承属性</td>
+<td>不是继承属性，元素及其子元素都会消失</td>
+<td>是继承属性，若子元素使用了visibility:visible，则不继承，这个子孙元素又会显现出</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l7">7. CSS 中 link 和 @import 的区别</h4>
+
+<ul>
+<li><strong>所属不同：</strong> link 属于 XHTML 标签，主要是用于定义文档与外部资源的关系，而 @import 完全是 CSS 提供的一种加载 CSS 的方式。</li>
+<li><strong>加载顺序不同：</strong> 当页面被加载时，link 引用的 CSS 会被同时加载，而 @import 引用的 CSS 会等到页面全部被下载完成后再加载。</li>
+<li><strong>兼容性不同（不再考虑）：</strong> @import 是 CSS 2.1 的内容。</li>
+<li>当使用 JavaScript 控制 DOM 改变样式时，只是使用 link 的方式，无法使用 @import 。</li>
+</ul>
+<h4 id="l8">8. 什么是响应式设计，响应式设计的基本原理是什么</h4>
+
+<p>响应式网站设计是一个网站能够兼容多个终端，而不是为每一个终端做一个特定的版本。</p>
+<p>基本原理是通过媒体查询检测不同的设备屏幕尺寸做对应处理。</p>
+<h4 id="l9">9. 为什么要初始化CSS样式</h4>
+
+<ul>
+<li><strong>兼容性处理：</strong> 因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对 CSS 初始化往往会出现浏览器之间的页面显示差异。</li>
+<li><strong>SEO：</strong> 初始化样式会对 SEO 有一定的影响</li>
+</ul>
+<blockquote>
+<p><strong>补充说明：</strong></p>
+<ul>
+<li><code>* {padding: 0; margin: 0;}</code> 这种初始化的方式，在应用较大、css样式较多时，<code>*</code> 会将所有便签初始化一次。</li>
 </ul>
 </blockquote>
-<p>待补充<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getProperty(obj: T, key: K) &#123;</span><br><span class="line">    return obj[key];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let x = &#123; a: 1, b: 2, c: 3, d: 4 &#125;;</span><br><span class="line"></span><br><span class="line">getProperty(x, &quot;a&quot;); // okay</span><br><span class="line">getProperty(x, &quot;m&quot;); // error: Argument of type &apos;m&apos; isn&apos;t assignable to &apos;a&apos; | &apos;b&apos; | &apos;c&apos; | &apos;d&apos;.</span><br></pre></td></tr></table></figure></p>
-<h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p>在编程过程中，为了便于代码阅读和后续维护。我们可以使用枚举清晰地表达意图，与其他内容加以区分。</p>
-<p>TypeScript 支持数字和基于字符串的枚举。使用的时候可以通过访问枚举的属性/名字访问枚举成员。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// 数字枚举</span><br><span class="line">enum Direction &#123;</span><br><span class="line">	Up = 1,</span><br><span class="line">	Down,		// 等价于 Down = 2</span><br><span class="line">	Left = 10,</span><br><span class="line">	Right,		// 等价于 Right = 11</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const test = 12;</span><br><span class="line">enum E &#123;</span><br><span class="line">	A = test,</span><br><span class="line">	B, // error: Enum member must have initializer. 即常量成员不允许紧随计算的成员</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 字符串枚举</span><br><span class="line">enum Direction &#123;</span><br><span class="line">    Up = &quot;UP&quot;,</span><br><span class="line">    Down = &quot;DOWN&quot;,</span><br><span class="line">    Left = &quot;LEFT&quot;,</span><br><span class="line">    Right = &quot;RIGHT&quot;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>需要注意的是：</strong></p>
+<h4 id="l10">10. CSS3有哪些新特性</h4>
+
 <ul>
-<li>数字枚举中，第一个成员默认为 0。其中未赋值的成员相对于之前有值的成员 <strong>自增长</strong>。</li>
-<li>如果在数字枚举中，利用计算的或者常量成员时，不允许不带初始化器的枚举（在正常的枚举里，没有初始化方法的成员被当成 <strong>常数成员</strong>）置于其后。</li>
-<li>与数字枚举不同的是，字符串枚举没有 <strong>自增长行为</strong>。</li>
-<li>在使用枚举的过程中，不建议使用 <strong>异构枚举</strong>（即混合数字和字符串的枚举）。</li>
-<li>枚举不同于接口，枚举是在 <strong>运行时真正存在的对象</strong>。</li>
-<li>在枚举中，除了可以通过枚举成员的名字去访问对应的枚举值，也能够通过枚举值 <strong>反向映射</strong> 到枚举名字。这是因为枚举类型会被编译成一个包含正向映射（name -&gt; value）和反向映射（value -&gt; name）的对象。</li>
-<li>在枚举上使用 <code>const</code> 修饰符的话，可以声明 <strong>常量枚举</strong>。常量枚举只能使用常量枚举表达式，并且不同于常规的枚举，它们在编译阶段会被删除。 常量枚举成员在使用的地方会被内联进来。 之所以可以这么做是因为，常量枚举不允许包含计算成员。</li>
-<li>多文件模块中，对于外部已经存在枚举，可以使用 <strong>外部枚举</strong> 用于描述已存在的枚举类型。</li>
+<li>实现圆角 <code>border-radius</code>，阴影 <code>box-shadow</code>，边框图片 <code>border-image</code></li>
+<li>对文字加特效 <code>text-shadow</code>，强制文本换行 <code>word-wrap</code>，线性渐变 <code>linear-gradient</code></li>
+<li>实现旋转 <code>transform:rotate(90deg)</code>, 缩放 <code>scale(0.85,0.90)</code>, <code>translate(0px,-30px)</code> 定位,倾斜 <code>skew(-9deg,0deg)</code>;</li>
+<li>增加了更多的CSS选择器、多背景、<code>rgba()</code></li>
+<li>唯一引入的伪元素是 <code>::selection</code>；</li>
+<li>实现媒体查询 <code>@media</code>，多栏布局 <code>flex</code></li>
+<li>过渡 <code>transition</code> 动画 <code>animation</code></li>
 </ul>
-</blockquote>
-<h3 id="类型推论"><a href="#类型推论" class="headerlink" title="类型推论"></a>类型推论</h3><p>在 TypeScript 中，对于没有明确指明类型的地方，类型推论会帮助提供类型。</p>
-<p>在类型推论过程中，如果需要从表达式中推断类型，TypeScript 会使用这些表达式来推断出一个 <strong>最佳通用类型</strong>。除了表达式外，TypeScript类型推论也可能按照 <strong>上下文</strong> 进行推论。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let x = &apos;2&apos;; // x 被推断为字符串</span><br><span class="line">let y: string = x + 1; // OK！ x 为字符串，计算后的结果也是字符串</span><br><span class="line"></span><br><span class="line">let zoo = [new Rhino(), new Elephant(), new Snake()]; // zoo 没有找到最佳通用类型，被推断为联合数组类型 (Rhino | Elephant | Snake)[]</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>备注：</p>
-<p>此处的内容理解得不是很清楚，感觉就是在说 TypeScript 会推论没有声明数据类型的地方，然后进行数据类型校验。</p>
-</blockquote>
-<h3 id="类型兼容性"><a href="#类型兼容性" class="headerlink" title="类型兼容性"></a>类型兼容性</h3><p><strong>结构类型</strong> 是一种只使用其成员描述类型的方式。TypeScript 使用结构类型系统的方式来描述。</p>
-<p>TypeScript结构化类型系统的基本规则是：</p>
+<h4 id="l11">11. ::before 和 :after中双冒号和单冒号有什么区别？解释一下这2个伪元素的作用</h4>
+
+<p>单冒号(:)用于CSS3伪类，双冒号(::)用于CSS3伪元素。（伪元素由双冒号和伪元素名称组成）,双冒号是在当前规范中引入的，用于区分伪类和伪元素。</p>
+<h4 id="l12">12. CSS优化、提高性能的方法有哪些</h4>
+
 <ul>
-<li>如果 <code>x</code> 要兼容 <code>y</code>，那么 <code>y</code> 至少具有与 <code>x</code> 相同的属性。</li>
-<li>当比较两个函数 <code>x</code> 和 <code>y</code> 时，首先会检查它们的参数列表，<code>x</code> 的每个参数必须能在 <code>y</code> 中找到对应类型的参数。（比较时只看类型不看参数名称，具体可看示例2）</li>
+<li>移除空的css规则（Remove empty rules）</li>
+<li>正确使用 display 的属性</li>
+<li>不滥用浮动、web字体</li>
+<li>不声明过多的 font-size</li>
+<li>不在选择符中使用ID标识符</li>
+<li>遵守盒模型规则</li>
+<li>尽量减少页面重排、重绘</li>
+<li>抽象提取公共样式，减少代码量</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Name &#123;</span><br><span class="line">    name: string;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Person &#123;</span><br><span class="line">    name: string;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let p: Name;</span><br><span class="line">p = new Person(); // ok</span><br><span class="line"></span><br><span class="line">let y = &#123; name: &apos;Alice&apos;, location: &apos;Seattle&apos; &#125;;</span><br><span class="line">p = y; // ok, 这个比较过程是递归进行的，检查每个成员及子成员</span><br></pre></td></tr></table></figure>
-<p>示例2：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let x = (a: number) =&gt; 0;</span><br><span class="line">let y = (b: number, s: string) =&gt; 0;</span><br><span class="line"></span><br><span class="line">y = x; // OK</span><br><span class="line">x = y; // Error</span><br></pre></td></tr></table></figure>
-<h3 id="高级类型"><a href="#高级类型" class="headerlink" title="高级类型"></a>高级类型</h3><p>常用的高级类型有：</p>
+<h4 id="l13">13. 重绘和回流</h4>
+
+<p>回流一定会引起重绘，重绘不一定引起回流</p>
+<p>具体请看：<a href="https://yiqingfeng.github.io/2019/06/17/2019-2/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/">浏览器的重绘和回流</a></p>
+<h4 id="l14">14. flex弹性布局</h4>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png" alt></p>
+<p><strong>flex 容器的属性：</strong></p>
 <ul>
-<li>交叉类型</li>
-<li>联合类型</li>
-<li>枚举类型</li>
-<li><code>this</code>类型（在接口、类中，声明 <code>this</code> 返回，可用于链式调用场景）</li>
-<li>索引类型</li>
+<li><code>flex-direction</code> 决定主轴排列方向，默认为 <code>row</code> 水平从左至右。</li>
+<li><code>flex-wrap</code> 决定是否换行，以及如何换行，默认为 <code>nowrap</code> 不换行。</li>
+<li><code>flex-flow</code> 即为<code>flex-flow: &lt;flex-direction&gt; || &lt;flex-wrap&gt;;</code></li>
+<li><code>justify-content</code> 决定子元素在主轴上的对齐方式，默认为 <code>flex-start</code> 左对齐。</li>
+<li><code>align-items</code> 决定子元素在交叉轴上的对齐方式，默认为 <code>stretch</code> 占满整个容器高度。</li>
+<li><code>align-content</code> 决定当存在多个轴线，即子元素分多行时的对齐方式，默认为 <code>stretch</code> 子元素将占满整个容器高度。</li>
 </ul>
-<h4 id="交叉类型"><a href="#交叉类型" class="headerlink" title="交叉类型"></a>交叉类型</h4><p>在 TypeScript 中，交叉类型用于将多个类型合并为一个类型，使其包含所有类型的特性。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// 交叉类型</span><br><span class="line">function extend&lt;T, U&gt;(first: T, second: U): T &amp; U &#123;</span><br><span class="line">    let result = &lt;T &amp; U&gt;&#123;&#125;;</span><br><span class="line">    for (let id in first) &#123;</span><br><span class="line">        (&lt;any&gt;result)[id] = (&lt;any&gt;first)[id];</span><br><span class="line">    &#125;</span><br><span class="line">    for (let id in second) &#123;</span><br><span class="line">        if (!result.hasOwnProperty(id)) &#123;</span><br><span class="line">            (&lt;any&gt;result)[id] = (&lt;any&gt;second)[id];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Person &#123;</span><br><span class="line">    constructor(public name: string) &#123; &#125;</span><br><span class="line">&#125;</span><br><span class="line">interface Loggable &#123;</span><br><span class="line">    log(): void;</span><br><span class="line">&#125;</span><br><span class="line">class ConsoleLogger implements Loggable &#123;</span><br><span class="line">    log() &#123;</span><br><span class="line">        // ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">var jim = extend(new Person(&quot;Jim&quot;), new ConsoleLogger());</span><br><span class="line">console.log(jim.name);</span><br><span class="line">jim.log();</span><br></pre></td></tr></table></figure>
-<h4 id="联合类型"><a href="#联合类型" class="headerlink" title="联合类型"></a>联合类型</h4><p>联合类型在使用上不同于交叉类型，其常用于表示一个值可以是多种类型之一。使用 <code>|</code> 分隔每个类型。如果一个值是联合类型，访问时只能访问此联合类型中所有类型的共有成员。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class UnionType &#123;</span><br><span class="line">	constructor (public type: string | number) &#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">let ut: UnionType;</span><br><span class="line">ut = new UnionType(&apos;hello&apos;);</span><br><span class="line">ut.type.slice(1); // error</span><br><span class="line"></span><br><span class="line">(&lt;string&gt;ut.type).slice(1);</span><br><span class="line"></span><br><span class="line">function isString (type: string | number): type is string &#123;</span><br><span class="line">	return (&lt;string&gt; type).slice !== undefined;</span><br><span class="line">&#125;</span><br><span class="line">if (isString(ut.type)) &#123;</span><br><span class="line">	ut.type.slice(1)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if (typeof ut.type === &apos;string&apos;) &#123;</span><br><span class="line">	ut.type.slice(1)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>对于在联合类型中，希望访问该类型特有的成员，可以使用一下几种方法：</p>
+<p><strong>flex 子元素的属性：</strong></p>
 <ul>
-<li>如果明确知道了联合类型的具体类型，可以使用类型断言。</li>
-<li>可以使用类型谓词，谓词为 <code>parameterName is Type</code> 这种形式， <code>parameterName</code> 必须是来自于当前函数签名里的一个参数名。</li>
-<li><code>typeof</code> 类型保护：在 TypeScript 中，<code>typeof</code> 能被识别为一个类型保护。只有两种形式能被识别：<code>typeof v === &quot;typename&quot;</code> 和 <code>typeof v !== &quot;typename&quot;</code>， <code>&quot;typename&quot;</code> 必须是 <code>&quot;number&quot;</code>， <code>&quot;string&quot;</code>， <code>&quot;boolean&quot;</code> 或 <code>&quot;symbol&quot;</code>。 但是TypeScript并不会阻止你与其它字符串比较，语言不会把那些表达式识别为类型保护。</li>
-<li><code>instanceof</code> 类型保护：类似于 <code>typeof</code>类型保护，TypeScript 会将其细化为其构造签名。</li>
+<li><code>order</code> 决定了元素的排列顺序，默认为 0。</li>
+<li><code>flex-grow</code> 决定子元素的放大比例，默认为 0，即存在空余空间时，也不进行放大。</li>
+<li><code>flex-shrink</code> 决定子元素的缩小比例，默认为 1，该属性不能设置为负值。</li>
+<li><code>flex-basis</code> 决定分配多余空间前，子元素占据的主轴空间，默认为 <code>auto</code>，即元素的本身大小。</li>
+<li><code>flex</code> 即为 <code>flex: &lt;flex-grow&gt; &lt;flex-shrink&gt;? || &lt;flex-basis&gt; ]</code>，该属性可以简写为 <code>auto (1 1 auto)</code> 和 <code>none (0 0 auto)</code></li>
+<li><code>align-self</code> 元素的对齐方式，默认为 <code>auto</code>，表示继承父元素的 <code>align-items</code> 属性</li>
 </ul>
-</blockquote>
-<h4 id="类型别名"><a href="#类型别名" class="headerlink" title="类型别名"></a>类型别名</h4><p>类型别名会给一个类型起个新名字。 类型别名有时和接口很像，但是可以作用于原始值，联合类型，元组以及其它任何你需要手写的类型。</p>
 <blockquote>
-<p>个人感受：</p>
-<p>类型别名最好配合联合类型或是交叉类型使用。</p>
+<p>注意：</p>
+<p>设置为 <code>Flex</code> 布局后，子元素的 <code>float</code>、<code>clear</code> 和 <code>vertical-align</code> 属性将失效。</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">type Name = string;</span><br><span class="line">type NameResolver = () =&gt; string;</span><br><span class="line">type NameOrResolver = nu | NameResolver;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>类型别名和接口区别：</p>
+<p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener">flex布局教程–阮一峰</a></p>
+<h4 id="l15">15. grid 网格布局</h4>
+
+<p><a href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html" target="_blank" rel="noopener">Grid网格布局教程–阮一峰</a></p>
+<h4 id="l16">16. css预处理器</h4>
+
 <ul>
-<li>接口创建了新名称，可以在其它任何地方使用，而类型别名并没有创建新名字。</li>
-<li>类型别名不能被 extends和 implements</li>
-<li>接口不能用来描述一个联合类型或是元组类型</li>
+<li>less</li>
+<li>sass</li>
+<li>postcss</li>
+<li>…</li>
 </ul>
-</blockquote>
-<h4 id="索引类型"><a href="#索引类型" class="headerlink" title="索引类型"></a>索引类型</h4><p>在 TypeScript 中可以通过，<strong>索引类型查询</strong> （<code>keyof T</code>） 和 <strong>索引访问 操作符</strong>（<code>T[K]</code>）进行类型判断处理。</p>
-<blockquote>
-<p>新版本貌似去掉了 keyof 关键词</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function pluck&lt;T, K extends keyof T&gt;(o: T, names: K[]): T[K][] &#123;</span><br><span class="line">  return names.map(n =&gt; o[n]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">interface Person &#123;</span><br><span class="line">    name: string;</span><br><span class="line">    age: number;</span><br><span class="line">&#125;</span><br><span class="line">let person: Person = &#123;</span><br><span class="line">    name: &apos;Jarid&apos;,</span><br><span class="line">    age: 35</span><br><span class="line">&#125;;</span><br><span class="line">let strings: string[] = pluck(person, [&apos;name&apos;]); // ok, string[]</span><br></pre></td></tr></table></figure>
-<h3 id="Symbols"><a href="#Symbols" class="headerlink" title="Symbols"></a>Symbols</h3><p>自 ECMAScript 2015 起，<code>symbol</code> 成为了一种新的原生类型，就像 <code>number</code> 和 <code>string</code> 一样。</p>
-<p>Symbols 是不可改变且唯一的。同时 Symbols 也可以用做对象的键值。在 ECMAScript 目前无私有属性的情况，下也用于定义私有属性。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let sym2 = Symbol(&quot;key&quot;);</span><br><span class="line">let sym3 = Symbol(&quot;key&quot;);</span><br><span class="line"></span><br><span class="line">sym2 === sym3; // false, symbols是唯一的</span><br><span class="line"></span><br><span class="line">const name = Symbol()</span><br></pre></td></tr></table></figure>
-<p>事实上，除了用户自定义的 symbol，语言内部也内置了一些 symbol 行为。其中 <code>for..of</code> 会遍历可迭代的对象，调用对象上的 <code>Symbol.iterator</code> 方法。</p>
-<blockquote>
-<p>需要注意的是：</p>
-<p>当生成目标为ES5或ES3，迭代器只允许在Array类型上使用。 在非数组值上使用 for..of语句会得到一个错误，就算这些非数组值已经实现了Symbol.iterator属性。</p>
-</blockquote>
 ]]></content>
       <categories>
-        <category>前端工具</category>
+        <category>前端面试</category>
       </categories>
       <tags>
-        <tag>TypeScript</tag>
-        <tag>Tools</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
 </search>
